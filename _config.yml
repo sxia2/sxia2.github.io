@@ -258,7 +258,7 @@ defaults:
   - scope:
       path: "_pages/about.md"
       type: pages
+      permalink: /about/
     values:
       layout: single
       author_profile: true
-    permalink: /about/
