@@ -6,11 +6,11 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-minimal_mistakes_skin    : "dark"
+minimal_mistakes_skin    : "contrast"
 
 # Site Settings
 locale                   : "en"
-title                    : "Sibei Xia"
+title                    : # "Sibei Xia"
 title_separator          : "-"
 name                     : # "Your Name"
 description              : "Sibei Xia's webpage."
@@ -84,11 +84,12 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Sibei Xia"
+  avatar           : "/assets/images/bio-photo.jpg" 
+  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am currently a doctoral candidate in Textile Technology Management at North Carolina State University."
+  location         : "Raleigh, NC"
+  email            : "sxia2@ncsu.edu"
   uri              :
   bitbucket        :
   codepen          :
