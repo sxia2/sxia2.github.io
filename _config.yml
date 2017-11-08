@@ -256,9 +256,8 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: "_pages/about.md"
+      path: ""
       type: pages
-      permalink: /about/
     values:
       layout: single
       author_profile: true
