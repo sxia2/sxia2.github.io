@@ -88,7 +88,10 @@ author:
   name             : "Sibei Xia"
   avatar           : "/assets/images/bio-photo.jpg" 
   # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "PhD candidate in Textile Technology Management at NC STATE\n M.S. in Textiles\n Master of Computer Science"
+  bio              : |+
+  PhD candidate in Textile Technology Management
+  M.S. in Textiles
+  Master of Computer Science
   location         : "Raleigh, NC"
   email            : "sxia2@ncsu.edu"
   uri              :
