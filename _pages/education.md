@@ -24,10 +24,10 @@ title: "Education"
 **Committee**: [Dr. Cynthia Istook](https://textiles.ncsu.edu/blog/team/cynthia-istook/), [Dr. Lori Rothenberg](https://textiles.ncsu.edu/blog/team/lori-rothenberg/), [Dr. Trevor Little](https://textiles.ncsu.edu/blog/team/trevor-little/), and [Dr. Yingjiao Xu](https://textiles.ncsu.edu/blog/team/yingjiao-xu/)
 
 ---
-### Bachelor of Engineering in Fashion Design and Engineering 
+### Bachelor of Engineering in Fashion Design and Engineering  
 *(September 2007 ~ July 2011)*  
-*Donghua University, Shanghai, China  
-**Undergraduate thesis title**: “Design of cup inner shape based on breast forms”
+*Donghua University, Shanghai, China*  
+**Undergraduate thesis title**: “Design of cup inner shape based on breast forms”  
 **Advisor**: Dr. Fang Fang
 
 ---
