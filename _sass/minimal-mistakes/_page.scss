@@ -76,7 +76,8 @@
 
   p, li, dl {
     //font-size: $type-size-5
-    font-size: 1em;
+    //font-size: 1em;
+    font-size: 16px; /* 16 is the default increase if you want it larger */
   }
 
   /* paragraph indents */
@@ -429,8 +430,4 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
-}
-
-.article-wrap p {
-  font-size: 16px; /* 16 is the default increase if you want it larger */
 }
