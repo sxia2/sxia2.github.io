@@ -14,12 +14,8 @@
   max-width: 100%;
   -webkit-animation-delay: 0.35s;
           animation-delay: 0.35s;
-/*
-  @include breakpoint($x-large) {
-    max-width: $x-large;
-  }
-*/
-    @include breakpoint($large) {
+
+    @include breakpoint($x-large) {
     max-width: $x-large;
   }
 }
@@ -433,4 +429,8 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+.article-wrap p {
+  font-size: 16px; /* 16 is the default increase if you want it larger */
 }
