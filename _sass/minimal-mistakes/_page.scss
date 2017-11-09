@@ -14,8 +14,12 @@
   max-width: 100%;
   -webkit-animation-delay: 0.35s;
           animation-delay: 0.35s;
-
+/*
   @include breakpoint($x-large) {
+    max-width: $x-large;
+  }
+*/
+    @include breakpoint($large) {
     max-width: $x-large;
   }
 }
