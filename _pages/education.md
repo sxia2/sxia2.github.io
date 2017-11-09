@@ -1,3 +1,4 @@
 ---
 permalink: /education/
+title: "Education"
 ---
