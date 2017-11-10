@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 ---
 
-My career goal is to become a faculty at a university, where I can contribute to its focus on teaching, scholarship, learning, and inclusion. I would continue my research on merging apparel design and computer science, and lead campus and professional service activities.
+My career goal is to stay in academia, where I can contribute to its focus on teaching, scholarship, learning, and inclusion. I would continue my research on merging apparel design and computer science, and lead campus and professional service activities.
 
 My academic training on apparel design and computer science prepares me to work on interdisciplinary research such as body data mining and automation of customized fit. I am currently working on my dissertation, titled as “Predicting 3D body measurements with 2D images”, under the direction of Dr. Cynthia Istook, Dr. Andre West, Dr. David Bruner, and Dr. Raju Vatsavai. The purpose of the research is to develop a system that measures a human body using cellphone images. Existing 3D anthropometric databases are used to predict hidden 3D information from 2D images. Knowledge on machine learning, image processing, 3D body scanning, and apparel design is implemented in this research. The system is believed to be able to simplify the process and increase the accuracy of body measurement in a home environment. I am excited to share and continue to explore this methodology and collaborate with your department faculties to expand its potential.
 
