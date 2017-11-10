@@ -9,7 +9,15 @@ Investigation to increase customer’s satisfaction and discover potential marke
 #### Dissertation Project 
 *(Spring 2017 – Present)*  
 *College of Textiles, North Carolina State University, Raleigh, NC*  
--	Build regression models based on anthropometric databases.
--	Collect body data through three-dimensional body scanner and cellphone cameras.
--	Measure body in images.
--	Predict additional body measurements from images using regression models.
+   -	Build regression models based on anthropometric databases.
+   -	Collect body data through three-dimensional body scanner and cellphone cameras.
+   -	Measure body in images.
+   -	Predict additional body measurements from images using regression models.
+
+#### Course Project 
+*(Fall 2016)*  
+*College of Textiles, North Carolina State University, Raleigh, NC*  
+   -	Collect body data through a three-dimensional whole-body scanner, a handheld scanner, and a tape measure.
+   -	Develop a way to extract body measurements from data collected through the handheld scanner.
+   -	Compare results from these techniques.
+
