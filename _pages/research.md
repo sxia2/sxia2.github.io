@@ -7,6 +7,16 @@ title: "Research"
 Investigation to increase customer’s satisfaction and discover potential market in the apparel industry through data mining, image processing, body scanning, size and fit improvement, and automation of pattern customization.
 
 ---
+
+### Funding
+**National Science Foundation (NSF) I-Corps** 
+*(Fall 2017)*  
+*North Carolina State University, Raleigh, NC*
+   -	Principal Investigator: Dr. Cynthia Istook
+   -  Entrepreneurial Lead: Sibei Xia and Jiayin Li
+   -  Up to $3,000 for activities to further business venture through customer discovery
+
+---
 #### Dissertation Project 
 *(Spring 2017 – Present)*  
 *College of Textiles, North Carolina State University, Raleigh, NC*

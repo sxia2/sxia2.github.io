@@ -33,3 +33,5 @@ title: "Working"
 #### Salesperson, IORI Shop 
 *(Winter 2010)*  
 *Jiuguang Dept. Store, Shanghai, China*
+
+---
