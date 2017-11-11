@@ -22,3 +22,32 @@ Investigation to increase customer’s satisfaction and discover potential marke
    -	Develop a way to extract body measurements from data collected through the handheld scanner.
    -	Compare results from these techniques.
 
+#### Research Assistantship 
+*(Fall 2014 – Spring 2015)*  
+*College of Textiles, North Carolina State University, Raleigh, NC*
+   -	Explore potential dissertation topics.
+   -	Conduct literature reviews on potential dissertation topics.
+	
+#### Thesis Project
+*(Fall 2012 – Fall 2013)*  
+*College of Textiles, North Carolina State University, Raleigh, NC*
+   -	Create and verify sizing system using the SizeUSA anthropometric data.
+   -	Analyze sizing system for different body shapes.
+   
+#### Summer Project
+*(Summer 2012)*  
+*College of Textiles, North Carolina State University, Raleigh, NC*
+   -	Analyze and test seven ways of drafting pants patterns.
+   -  Compare difference between customized and standard size pants patterns. 
+
+#### Undergraduate Project  
+*(Spring – Summer 2011)*  
+*Fashion · Art Design Institute, Donghua University, Shanghai, China*
+   -	Measure subject’s breast dimensions manually and using a three-dimensional body scanner.
+   -	Create three-dimensional shapes for Bra’s inner face design.
+   
+#### Independent Study
+*(Spring 2010 – Spring 2011)*  
+*Fashion · Art Design Institute, Donghua University, Shanghai, China*
+   -	Conduct trend research and market research on menswear.
+   -  Explore pattern making methods for menswear.
