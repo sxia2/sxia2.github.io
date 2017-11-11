@@ -8,6 +8,8 @@ main:
     url: /education/
   - title: "Research"
     url: /research/
+  - title: "Publication"
+    url: /publication/
   - title: "Teaching"
     url: /teaching/
   - title: "Working"
