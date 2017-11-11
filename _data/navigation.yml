@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "Home"
-    url: https://sxia2.github.io
+# - title: "Home"
+#   url: https://sxia2.github.io/
   - title: "About"
-    url: /about/
+    url: https://sxia2.github.io/about/
   - title: "Education"
     url: /education/
   - title: "Research"
