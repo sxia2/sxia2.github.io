@@ -7,7 +7,7 @@ title: "Teaching"
 
 
 ---
-#### Lecture, Fashion Design I 
+#### Instructor, Fashion Design I 
 *(Fall 2015 & 2017)*  
 *College of Textiles, North Carolina State University, Raleigh, NC*
    -	Introduce students to the basic rules and principles of flat pattern-making for apparel products.
@@ -24,12 +24,18 @@ title: "Teaching"
    -	Assist students to prepare items for critiques and showcases.
    -  Assist with preparation of items for shows.
 
-#### Lab Lecture, Fashion Product Analysis
+#### Co-instructor (with Dr. Cynthia Istook), Fashion Product Analysis
 *(Fall 2016)*  
 *College of Textiles, North Carolina State University, Raleigh, NC*
    -	Teach students on how to use industrial sewing machines. 
    -  Guide students on making sewing products utilizing follow-up critiques.
 
+#### Instructor, Sewing and Embroidery Workshops 
+*(Fall 2012 – Spring 2013)*  
+*TechShop, Raleigh, NC*
+   -	Train members on using sewing machines.
+   -  Train members on using embroidery machines.
+   
 #### Lab Assistant, Apparel Lab 
 *(Fall 2011 – Spring 2013)*  
 *College of Textiles, North Carolina State University, Raleigh, NC*
