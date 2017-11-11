@@ -51,3 +51,5 @@ Investigation to increase customer’s satisfaction and discover potential marke
 *Fashion · Art Design Institute, Donghua University, Shanghai, China*
    -	Conduct trend research and market research on menswear.
    -  Explore pattern making methods for menswear.
+
+---

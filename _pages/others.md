@@ -1,0 +1,4 @@
+---
+permalink: /others/
+title: "Others"
+---
