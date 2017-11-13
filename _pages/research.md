@@ -3,13 +3,13 @@ permalink: /research/
 title: "Research"
 ---
 
-## Research Interests 
+### Research Interests  
 Investigation to increase customer’s satisfaction and discover potential market in the apparel industry through data mining, image processing, body scanning, size and fit improvement, and automation of pattern customization.
 
 ---
 
-## Funding
-### National Science Foundation (NSF) I-Corps 
+### Funding
+**National Science Foundation (NSF) I-Corps**  
 *(Fall 2017)*  
 *North Carolina State University, Raleigh, NC*
    -	Principal Investigator: Dr. Cynthia Istook
