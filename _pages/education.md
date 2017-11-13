@@ -3,7 +3,7 @@ permalink: /education/
 title: "Education"
 ---
 
-## PhD in Textile Technology Management 
+**<span style="color:blue">PhD in Textile Technology Managemen</span>**  
 *(August 2014 - May 2018)*  
 *North Carolina State University, Raleigh, NC*  
 **Dissertation title**: “Predicting body measurements using images taken with cellphones”  
