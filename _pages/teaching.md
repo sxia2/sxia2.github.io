@@ -12,23 +12,27 @@ title: "Teaching"
 *College of Textiles, North Carolina State University, Raleigh, NC*
    -	Introduce students to the basic rules and principles of flat pattern-making for apparel products.
    -  Lead students to design and make final projects with follow-up critiques.
+   -  [Student Works](https://sxia2.github.io/student_works/FTD215)
 
 ### Group Leader, Summer Textile Exploration Program 
 *(Summer 2017)*  
 *College of Textiles, North Carolina State University, Raleigh, NC*
    -	Teach high school students how to use their creative skills and recycle garments into newly constructed outfits.
+   -  [Student Works](https://sxia2.github.io/student_works/STEP17)
 
 ### Teaching Assistant, Senior Fashion & Textile Collection Studio 
 *(Spring 2016 & 2017)*  
 *College of Textiles, North Carolina State University, Raleigh, NC*
    -	Assist students to prepare items for critiques and showcases.
    -  Assist with preparation of items for shows.
+   -  [Student Works](https://sites.textiles.ncsu.edu/ftdemergingdesigners/)
 
 ### Co-instructor (with Dr. Cynthia Istook), Fashion Product Analysis
 *(Fall 2016)*  
 *College of Textiles, North Carolina State University, Raleigh, NC*
    -	Teach students how to use industrial sewing machines. 
    -  Teach students how to make sewing products with follow-up critiques.
+   -  [Student Works](https://sxia2.github.io/student_works/FTM219)
 
 ### Instructor, Sewing and Embroidery Workshops 
 *(Fall 2012 – Spring 2013)*  
