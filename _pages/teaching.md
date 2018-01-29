@@ -4,7 +4,7 @@ title: "Teaching"
 ---
 
 ### Teaching Philosophy
-
+I believe a good teacher should create an interactive environment to motivate students to build their own problem-solving skills. 
 
 ---
 ### Instructor, Fashion Design I 
