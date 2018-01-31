@@ -9,3 +9,7 @@ FTM219 introduces concepts and practices for the production and evaluation of fa
   <a href="https://sxia2.github.io/student_works/FTM21901.jpg"><img src="https://sxia2.github.io/student_works/FTM21901.jpg"></a>
   <a href="https://sxia2.github.io/student_works/FTM21901.jpg"><img src="https://sxia2.github.io/student_works/FTM21902.jpg"></a>
 </figure>
+<figure class="half">
+  <a href="https://sxia2.github.io/student_works/FTM21901.jpg"><img src="https://sxia2.github.io/student_works/FTM21903.jpg"></a>
+  <a href="https://sxia2.github.io/student_works/FTM21901.jpg"><img src="https://sxia2.github.io/student_works/FTM21904.jpg"></a>
+</figure>
