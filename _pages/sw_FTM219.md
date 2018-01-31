@@ -3,7 +3,7 @@ permalink: /student/FTM219
 title: "Student Works FTM219"
 ---
 ### Fall 2016
+FTM219 introduces concepts and practices for the production and evaluation of fashion goods, beginning with selection of fabric and other raw materials and extending through quality analysis of the final product. Provide techniques for production of a variety of garment applications, as well as methods for evaluation. For the final project, students are asked to sew garments given commercial patterns. 
 <figure>
-	<a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"><img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg"></a>
-	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
+	<a href="https://sxia2.github.io/student_works/FTM21901.jpg"><img src="https://sxia2.github.io/student_works/FTM21901.jpg"></a>
 </figure>
