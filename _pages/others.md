@@ -2,6 +2,8 @@
 permalink: /others/
 title: "Others"
 ---
+
+---
 ### Working experience
 **Product Developer**  
 *(Spring – Summer 2014)*  
