@@ -9,8 +9,7 @@ title: "Others"
 *(Spring – Summer 2014)*  
 *Gym Rags, Raleigh, NC*
    -	Develop women's sportswear with shaping functions.
-<br>  
-<br>  
+   
 **Intern**  
 *(Winter 2013 – Spring 2014)*  
 *Haws USA, Raleigh, NC*
