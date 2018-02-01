@@ -12,11 +12,11 @@ FTM219 introduces concepts and practices for the production and evaluation of fa
 </figure>
 <figure class="third">
   <a href="https://sxia2.github.io/student_works/FTM21901.jpg"><img src="https://sxia2.github.io/student_works/FTM21904.jpg"></a>
-  <a href="https://sxia2.github.io/student_works/FTM21902.jpg"><img src="https://sxia2.github.io/student_works/FTM21905.jpg"></a>
-  <a href="https://sxia2.github.io/student_works/FTM21903.jpg"><img src="https://sxia2.github.io/student_works/FTM21906.jpg"></a>
+  <a href="https://sxia2.github.io/student_works/FTM21902.jpg"><img src="https://sxia2.github.io/student_works/FTM21908.jpg"></a>
+  <a href="https://sxia2.github.io/student_works/FTM21903.jpg"><img src="https://sxia2.github.io/student_works/FTM21907.jpg"></a>
 </figure>
 <figure class="third">
-  <a href="https://sxia2.github.io/student_works/FTM21901.jpg"><img src="https://sxia2.github.io/student_works/FTM21907.jpg"></a>
-  <a href="https://sxia2.github.io/student_works/FTM21902.jpg"><img src="https://sxia2.github.io/student_works/FTM21908.jpg"></a>
+  <a href="https://sxia2.github.io/student_works/FTM21901.jpg"><img src="https://sxia2.github.io/student_works/FTM21906.jpg"></a>
+  <a href="https://sxia2.github.io/student_works/FTM21902.jpg"><img src="https://sxia2.github.io/student_works/FTM21905.jpg"></a>
   <a href="https://sxia2.github.io/student_works/FTM21903.jpg"><img src="https://sxia2.github.io/student_works/FTM21909.jpg"></a>
 </figure>
