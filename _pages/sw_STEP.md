@@ -7,7 +7,7 @@ The apparel design concentration provides students with an overview of the princ
   
 *For current current program, visit [here](https://textiles.ncsu.edu/future-students/future-undergraduate/step/).*  
 
-###Fall 2017  
+### Fall 2017  
 <figure>
   <a href="https://sxia2.github.io/student_works/STEP01.jpg"><img src="https://sxia2.github.io/student_works/STEP01.jpg"></a>
 </figure>
