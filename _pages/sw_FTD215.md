@@ -17,3 +17,13 @@ Studio course which introduces students to the basic rules and principles of fla
   <a href="https://sxia2.github.io/student_works/FTM21902.jpg"><img src="https://sxia2.github.io/student_works/FTD21506.jpg"></a>
 </figure>
 ### Fall 2015 Final Projects
+<figure class="third">
+  <a href="https://sxia2.github.io/student_works/FTM21901.jpg"><img src="https://sxia2.github.io/student_works/FTD21511.jpg"></a>
+  <a href="https://sxia2.github.io/student_works/FTM21902.jpg"><img src="https://sxia2.github.io/student_works/FTD21512.jpg"></a>
+  <a href="https://sxia2.github.io/student_works/FTM21903.jpg"><img src="https://sxia2.github.io/student_works/FTD21513.jpg"></a>
+</figure>
+<figure class="third">
+  <a href="https://sxia2.github.io/student_works/FTM21901.jpg"><img src="https://sxia2.github.io/student_works/FTD21514.jpg"></a>
+  <a href="https://sxia2.github.io/student_works/FTM21902.jpg"><img src="https://sxia2.github.io/student_works/FTD21515.jpg"></a>
+  <a href="https://sxia2.github.io/student_works/FTM21903.jpg"><img src="https://sxia2.github.io/student_works/FTD21516.jpg"></a>
+</figure>
