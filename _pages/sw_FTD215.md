@@ -1,6 +1,6 @@
 ---
 permalink: /student/FTD215
-title: "Student Works FTD215"
+title: "Student Works - FTD215 Fashion Design I"
 ---
 Studio course which introduces students to the basic rules and principles of flat pattern-making for apparel products. Advanced applications are demonstrated through workshops utilizing concept-driven problems and follow-up critiques. Students are asked to design and make a garment for their final projects.
 ### Fall 2017 Final Projects

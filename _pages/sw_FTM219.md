@@ -1,6 +1,6 @@
 ---
 permalink: /student/FTM219
-title: "Student Works FTM219"
+title: "Student Works - FTM219 Fashion Product Analysis"
 ---
 FTM219 introduces concepts and practices for the production and evaluation of fashion goods, beginning with selection of fabric and other raw materials and extending through quality analysis of the final product. Provide techniques for production of a variety of garment applications, as well as methods for evaluation. For the final project, students are asked to sew garments given commercial patterns. 
 ### Fall 2016 Final Projects
