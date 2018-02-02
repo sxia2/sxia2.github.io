@@ -2,8 +2,7 @@
 permalink: /project/cottonfirst
 title: "Cotton First Competition 2012"
 ---
-A convertible garment was designed and submitted to the Cotton First Competition 2012. Using invisible zippers, the garment can be converted between a suit and a skirt. All fabrics are 100% cotton. It won the second place in the advanced level.
-
+A convertible garment was designed and submitted to the Cotton First Competition 2012. Using invisible zippers, the garment can be converted between a suit and a skirt. All fabrics are 100% cotton. It won the second place in the advanced level.  
 <figure class="thiird">
   <a href="https://sxia2.github.io/project_data/cotton_first/01.png"><img src="https://sxia2.github.io/project_data/cotton_first/01.png"></a>
   <a href="https://sxia2.github.io/project_data/cotton_first/02.png"><img src="https://sxia2.github.io/project_data/cotton_first/02.png"></a>
