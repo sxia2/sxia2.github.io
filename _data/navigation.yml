@@ -13,8 +13,8 @@ main:
   - title: "Publication"
     url: /publication/
 #  - title: "Working"
-#    url: /working/
-  - title: "Others"
-    url: /others/ 
+#    url: /working/ 
   - title: "Projects"
     url: /projects/
+  - title: "Others"
+    url: /others/
