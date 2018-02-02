@@ -42,11 +42,13 @@ title: "Others"
 *(March 2017)*  
 *Issued by North Carolina State University Graduate Student Association*  
 
-**Recognition for Excellence in Laboratory Teaching**  
-*(March 2017)*  
+**Second Place in Cotton First Advanced level**  
+*(October 2012)* 
+[View designs](https://sxia2.github.io/project/cottonfirst)
 
 **Special Prize in Cotton Couture**  
 *(October 2011)*  
+[View designs](https://sxia2.github.io/project/cottoncouture)
 
 **Outstanding Study Scholarships**  
 *(2008, 2009, & 2010)*  
