@@ -12,8 +12,8 @@ main:
     url: /research/
   - title: "Publication"
     url: /publication/
-  - title: "Working"
-    url: /working/
+#  - title: "Working"
+#    url: /working/
   - title: "Others"
     url: /others/ 
   - title: "Projects"
