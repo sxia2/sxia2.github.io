@@ -43,7 +43,7 @@ title: "Others"
 *Issued by North Carolina State University Graduate Student Association*  
 
 **Second Place in Cotton First Advanced level**  
-*(October 2012)* 
+*(October 2012)*  
 [View designs](https://sxia2.github.io/project/cottonfirst)
 
 **Special Prize in Cotton Couture**  
