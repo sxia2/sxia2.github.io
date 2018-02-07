@@ -14,3 +14,8 @@ title: "Projects"
 
 ### Programs
   - [Web game Frogger 2017](https://sxia2.github.io/projects_data/Program4)
+  
+### Student Works
+  - [Fashion Design I (FTD 215) 2015 & 2017](https://sxia2.github.io/student/FTD215)
+  - [Summer Textile Exploration Program 2017](https://sxia2.github.io/student/step)
+  - [Fashion Product Analysis (FTM 219) 2016](https://sxia2.github.io/student/FTM219)
