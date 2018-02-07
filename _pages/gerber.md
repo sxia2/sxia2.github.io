@@ -14,6 +14,6 @@ The collection is designed to be worn at the Ruby Wedding Anniversary. Red is pi
   <a href="https://sxia2.github.io/projects_data/cad-gerber/05.jpg"><img src="https://sxia2.github.io/projects_data/cad-gerber/05.jpg"></a>
 </figure>
 <figure>
-  <a href="https://sxia2.github.io/projects_data/cad-gerber/03.jpg"><img src="https://sxia2.github.io/projects_data/cad-gerber/03.jpg"></a>
   <a href="https://sxia2.github.io/projects_data/cad-gerber/04.jpg"><img src="https://sxia2.github.io/projects_data/cad-gerber/04.jpg"></a>
+  <a href="https://sxia2.github.io/projects_data/cad-gerber/03.jpg"><img src="https://sxia2.github.io/projects_data/cad-gerber/03.jpg"></a>
 </figure>
