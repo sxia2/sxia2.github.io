@@ -4,6 +4,7 @@ title: "Projects"
 ---
 
 ### Designs
+  - [Knitting-Shima Seiki 2015](https://sxia2.github.io/project/shima)
   - [CAD-Gerber 2012](https://sxia2.github.io/project/gerber)
   - [Cotton First Competition 2012](https://sxia2.github.io/project/cottonfirst)
   - [Cotton Couture Competition 2011](https://sxia2.github.io/project/cottoncouture)
