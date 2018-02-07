@@ -10,8 +10,8 @@ The garment is designed for office ladies who spend days sitting in front of a c
   <a href="https://sxia2.github.io/projects_data/shima/10.png"><img src="https://sxia2.github.io/projects_data/shima/10.png"></a>
 </figure>
 <figure class="half">
-  <a href="https://sxia2.github.io/projects_data/shima/11.bmp"><img src="https://sxia2.github.io/projects_data/shima/11.bmp"></a>
-  <a href="https://sxia2.github.io/projects_data/shima/12.jpg"><img src="https://sxia2.github.io/projects_data/shima/12.jpg"></a>
+  <a href="https://sxia2.github.io/projects_data/shima/11.PNG"><img src="https://sxia2.github.io/projects_data/shima/11.PNG"></a>
+  <a href="https://sxia2.github.io/projects_data/shima/12.PNG"><img src="https://sxia2.github.io/projects_data/shima/12.PNG"></a>
 </figure>
 <figure class="half">
   <a href="https://sxia2.github.io/projects_data/shima/13.jpg"><img src="https://sxia2.github.io/projects_data/shima/13.jpg"></a>
