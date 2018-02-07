@@ -2,7 +2,7 @@
 permalink: /project/senior_studio
 title: "Senior Studio 2011"
 ---
-Inspired by army look, the collection is named as "Freedom". It is designed for females in their late 20s or early 30s. They are confident, sharp, strong, and fashionable. Straight silhouette is used to show their strength. Exaggerate collars are designed to show their unique personalities. 
+Inspired by army look, the collection is named as "Be Yourself". It is designed for females in their late 20s or early 30s. They are confident, sharp, strong, and fashionable. Straight silhouette is used to show their strength. Exaggerate collars are designed to show their unique personalities. 
 <figure>
   <a href="https://sxia2.github.io/projects_data/senior_studio/inspiration.jpg"><img src="https://sxia2.github.io/projects_data/senior_studio/inspiration.jpg"></a>
 </figure>
