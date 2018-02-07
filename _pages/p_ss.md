@@ -1,13 +1,26 @@
 ---
-permalink: /project/cottoncouture
-title: "Cotton Couture Competition 2011"
+permalink: /project/senior_studio
+title: "Senior Studio 2011"
 ---
-The garment was designed for a special client for the Cotton Couture Fashion Show 2011. Dr. Anne Porterfield and I worked together as a design team. For our inspiration we chose Raleigh’s natural beauty and sunset of the beach. Because our client was a middle-aged female, we designed casual suits that could showcase her elegance. Anne digitally printed the fabric and embroidered the motif. Three fit sessions were conducted with our client to ensure acceptable fit. Our design team won a cash prize in the fashion show. I could never have done this project without the help from Anne and our client. Many thanks to both of them.  
-<figure class="half">
-  <a href="https://sxia2.github.io/projects_data/cotton_couture/01.png"><img src="https://sxia2.github.io/projects_data/cotton_couture/01.png"></a>
-  <a href="https://sxia2.github.io/projects_data/cotton_couture/01.jpg"><img src="https://sxia2.github.io/projects_data/cotton_couture/01.jpg"></a>
+Inspired by army look, the collection is named as "Freedom". It is designed for females in their late 20s or early 30s. They are confident, sharp, strong, and fashionable. Straight silhouette is used to show their strength. Exaggerate collars are designed to show their unique personalities. 
+<figure>
+  <a href="https://sxia2.github.io/projects_data/senior_studio/inspiration.jpg"><img src="https://sxia2.github.io/projects_data/senior_studio/inspiration.jpg"></a>
+</figure>
+<figure>
+  <a href="https://sxia2.github.io/projects_data/senior_studio/ss-sketch.png"><img src="https://sxia2.github.io/projects_data/senior_studio/ss-sketch.png"></a>
 </figure>
 <figure class="half">
-  <a href="https://sxia2.github.io/projects_data/cotton_couture/02.jpg"><img src="https://sxia2.github.io/projects_data/cotton_couture/02.jpg"></a>
-  <a href="https://sxia2.github.io/projects_data/cotton_couture/03.jpg"><img src="https://sxia2.github.io/projects_data/cotton_couture/03.jpg"></a>
+  <a href="https://sxia2.github.io/projects_data/senior_studio/s1-01.jpg"><img src="https://sxia2.github.io/projects_data/senior_studio/s1-01.jpg"></a>
+  <a href="https://sxia2.github.io/projects_data/senior_studio/s2-01.jpg"><img src="https://sxia2.github.io/projects_data/senior_studio/s2-01.jpg"></a>
+</figure>
+<figure class="half">
+  <a href="https://sxia2.github.io/projects_data/senior_studio/s3-01.jpg"><img src="https://sxia2.github.io/projects_data/senior_studio/s3-01.jpg"></a>
+  <a href="https://sxia2.github.io/projects_data/senior_studio/s4-01.jpg"><img src="https://sxia2.github.io/projects_data/senior_studio/s4-01.jpg"></a>
+</figure>
+<figure class="half">
+  <a href="https://sxia2.github.io/projects_data/senior_studio/d10.JPG"><img src="https://sxia2.github.io/projects_data/senior_studio/d10.JPG"></a>
+  <a href="https://sxia2.github.io/projects_data/senior_studio/d20.JPG"><img src="https://sxia2.github.io/projects_data/senior_studio/d20.JPG"></a>
+</figure>
+<figure>
+  <a href="https://sxia2.github.io/projects_data/senior_studio/d30.JPG"><img src="https://sxia2.github.io/projects_data/senior_studio/d30.JPG"></a>
 </figure>
