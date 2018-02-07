@@ -10,7 +10,6 @@ Colorways are done in Lectra Kaledo. Patterns are done in Lectra Modaris. The pr
 </figure>
 <figure class="thrid">
   <a href="https://sxia2.github.io/projects_data/cad-lectra/colorway-1.jpg"><img src="https://sxia2.github.io/projects_data/cad-lectra/colorway-1.jpg"></a>
-  <a href="https://sxia2.github.io/projects_data/cad-lectra/colorway-1.jpg"><img src="https://sxia2.github.io/projects_data/cad-lectra/colorway-1.jpg"></a>
   <a href="https://sxia2.github.io/projects_data/cad-lectra/colorway-2.jpg"><img src="https://sxia2.github.io/projects_data/cad-lectra/colorway-2.jpg"></a>
   <a href="https://sxia2.github.io/projects_data/cad-lectra/colorway-3.jpg"><img src="https://sxia2.github.io/projects_data/cad-lectra/colorway-3.jpg"></a>
 </figure>
