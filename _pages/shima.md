@@ -21,7 +21,7 @@ The garment is designed for office ladies who spend days sitting in front of a c
   <a href="https://sxia2.github.io/projects_data/shima/15.JPG"><img src="https://sxia2.github.io/projects_data/shima/15.JPG"></a>
 </figure>
 
-### Design 1 - Whole Garment
+### Design 2 - Whole Garment
 An oversize cardigan is designed for office ladies to wear so that they can keep warm in an A/C environment. Same patterns are simulated with different yarns and prints.
 <figure>
   <a href="https://sxia2.github.io/projects_data/shima/20.bmp"><img src="https://sxia2.github.io/projects_data/shima/20.bmp"></a>
