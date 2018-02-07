@@ -14,10 +14,10 @@ title: "Textile and Accessories"
 
 ### Fabric Redesign
 <figure>
-  <a href="https://sxia2.github.io/projects_data/textile/01.png"><img src="https://sxia2.github.io/projects_data/textile/01.png</a>
+  <a href="https://sxia2.github.io/projects_data/textile/01.png"><img src="https://sxia2.github.io/projects_data/textile/01.png"></a>
 </figure>  
 
 ### Accessories
 <figure>
-  <a href="https://sxia2.github.io/projects_data/textile/00.png"><img src="https://sxia2.github.io/projects_data/textile/00.png</a>
+  <a href="https://sxia2.github.io/projects_data/textile/00.png"><img src="https://sxia2.github.io/projects_data/textile/00.png"></a>
 </figure>
