@@ -1,26 +1,21 @@
 ---
 permalink: /project/textile
-title: "Textile Designs"
+title: "Textile and Accessories"
 ---
-Tie-dye 
-<figure>
-  <a href="https://sxia2.github.io/projects_data/senior_studio/inspiration.jpg"><img src="https://sxia2.github.io/projects_data/senior_studio/inspiration.jpg"></a>
-</figure>
-<figure>
-  <a href="https://sxia2.github.io/projects_data/senior_studio/ss-sketch.png"><img src="https://sxia2.github.io/projects_data/senior_studio/ss-sketch.png"></a>
+### Tie-dye 
+<figure class="half">
+  <a href="https://sxia2.github.io/projects_data/textile/20.JPG"><img src="https://sxia2.github.io/projects_data/textile/20.JPG"></a>
+  <a href="https://sxia2.github.io/projects_data/textile/21.png"><img src="https://sxia2.github.io/projects_data/textile/21.png""></a>
 </figure>
 <figure class="half">
-  <a href="https://sxia2.github.io/projects_data/senior_studio/s1-01.jpg"><img src="https://sxia2.github.io/projects_data/senior_studio/s1-01.jpg"></a>
-  <a href="https://sxia2.github.io/projects_data/senior_studio/s2-01.jpg"><img src="https://sxia2.github.io/projects_data/senior_studio/s2-01.jpg"></a>
+  <a href="https://sxia2.github.io/projects_data/textile/10.JPG"><img src="https://sxia2.github.io/projects_data/textile/10.JPG"></a>
+  <a href="https://sxia2.github.io/projects_data/textile/11.png"><img src="https://sxia2.github.io/projects_data/textile/11.png""></a>
 </figure>
-<figure class="half">
-  <a href="https://sxia2.github.io/projects_data/senior_studio/s3-01.jpg"><img src="https://sxia2.github.io/projects_data/senior_studio/s3-01.jpg"></a>
-  <a href="https://sxia2.github.io/projects_data/senior_studio/s4-01.jpg"><img src="https://sxia2.github.io/projects_data/senior_studio/s4-01.jpg"></a>
-</figure>
-<figure class="half">
-  <a href="https://sxia2.github.io/projects_data/senior_studio/d10.JPG"><img src="https://sxia2.github.io/projects_data/senior_studio/d10.JPG"></a>
-  <a href="https://sxia2.github.io/projects_data/senior_studio/d20.JPG"><img src="https://sxia2.github.io/projects_data/senior_studio/d20.JPG"></a>
-</figure>
+### Fabric Redesign
 <figure>
-  <a href="https://sxia2.github.io/projects_data/senior_studio/d30.JPG"><img src="https://sxia2.github.io/projects_data/senior_studio/d30.JPG"></a>
+  <a href="https://sxia2.github.io/projects_data/textile/01.png"><img src="https://sxia2.github.io/projects_data/textile/01.png
+</figure>
+### Accessories
+<figure>
+  <a href="https://sxia2.github.io/projects_data/textile/00.png"><img src="https://sxia2.github.io/projects_data/textile/00.png
 </figure>
