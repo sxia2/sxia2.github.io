@@ -4,7 +4,7 @@ title: "Publication"
 ---
 
 ### Papers 
-**Xia, S.**, Guo, S., Li, J., & Istook, C. (In preparation). Comparison of different body measurement techniques: 3D whole-body scanner, 3D handheld scanner, and tape measure. *International Journal of Fashion Design, Technology and Education*.  
+**Xia, S.**, Guo, S., Li, J., & Istook, C. (In preparation). Comparison of different body measurement techniques: 3D whole-body scanner, 3D handheld scanner, and tape measure. *Journal of the Textile Institute*.  
 
 **Xia, S.**, & Istook, C. (2017). A method to create body sizing systems. *Clothing and Textiles Research Journal, 35(4), 235-248*. [https://doi.org/10.1177/0887302X17713298](https://doi.org/10.1177/0887302X17713298)  
 
