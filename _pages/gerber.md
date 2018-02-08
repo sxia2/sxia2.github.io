@@ -3,7 +3,7 @@ permalink: /project/gerber
 title: "CAD-Gerber 2012"
 ---
 ### Ruby Wedding Anniversary Dresses  
-The collection is designed to be worn at the Ruby Wedding Anniversary. Red is picked as the theme color. Dresses are designed for different body shapes. Considering the occasion, beads were used to create an elegant look. Patterns were made in Gerber Accmark.
+The collection was designed to be worn at the Ruby Wedding Anniversary. Red was picked as the theme color. Dresses were designed for different body shapes. Considering the occasion, beads were used to create elegant looks. Patterns were made in Gerber Accmark.
 <figure>
   <a href="https://sxia2.github.io/projects_data/cad-gerber/01.jpg"><img src="https://sxia2.github.io/projects_data/cad-gerber/01.jpg"></a>
 </figure>

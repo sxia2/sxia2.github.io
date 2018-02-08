@@ -2,8 +2,9 @@
 permalink: /project/lectra
 title: "CAD-Lectra 2010"
 ---
-A group project submitted for Lectra Competition. The collection is named as "Fun". It is designed for young females who are creative and passionate. Bright colors are selected. Flares are designed to avoid restriction. Colorways are done in Lectra Kaledo. Patterns are done in Lectra Modaris.  
-The project is also credited to Chen Ye,  Shoutong Qu, and Tianyu Yang. Model: Yiji Ren  
+A group project submitted for Lectra Competition. The collection was named as “Fun”. It was designed for young females who are creative and passionate. Bright colors were selected. Flares were designed to avoid movement restriction. Colorways were designed in Lectra Kaledo. Patterns were done in Lectra Modaris.   
+
+The project is also credited to Chen Ye, Shoutong Qu, and Tianyu Yang. Modeled by Yiji Ren.    
 <figure>
   <a href="https://sxia2.github.io/projects_data/cad-lectra/trend.jpg"><img src="https://sxia2.github.io/projects_data/cad-lectra/trend.jpg"></a>
 </figure>
