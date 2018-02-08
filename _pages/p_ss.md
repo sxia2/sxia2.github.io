@@ -1,6 +1,6 @@
 ---
 permalink: /project/senior_studio
-title: "Senior Studio 2011"
+title: "Senior Studio 2010"
 ---
 Inspired by army look, the collection is named as "Be Yourself". It is designed for females in their late 20s or early 30s. They are confident, sharp, strong, and fashionable. Straight silhouette is used to show their strength. Exaggerate collars are designed to show their unique personalities. 
 <figure>
