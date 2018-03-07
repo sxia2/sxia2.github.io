@@ -24,6 +24,7 @@ Investigation to increase customer’s satisfaction and discover potential marke
    -	Collect body data through three-dimensional body scanner and cellphone cameras.
    -	Measure body in images.
    -	Predict additional body measurements from images using regression models.
+   -  [Data collecting](https://sxia2.github.io/research/research/dissertation) 
 
 ### Course Project 
 *(Fall 2016)*  
