@@ -3,6 +3,8 @@ permalink: /research/dissertation
 title: "Dissertation Data Collecting"
 ---
 
+**[BOOK APPOINTMENTS](https://calendar.google.com/calendar/selfsched?sstoken=UU50X0EzelNfMUhPfGRlZmF1bHR8YzI0ZDg2OGFlNWE0Mzg1OTFhODc2MzgwMDdjYzhjZTk)**  
+
 Thank you for being interested in participating the project.  
 
 I am collecting body measurement data from female college students to support my dissertation research. You data will be collected in **room 3412 at College of Textiles, NC State University**. The whole process takes around **15-20 minutes** and you will get a **free T-shirt**. 
