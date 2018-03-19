@@ -7,7 +7,7 @@ title: "Dissertation Data Collecting"
 
 Thank you for being interested in participating the project.  
 
-I am collecting body measurement data from female college students to support my dissertation research. You data will be collected in **room 3412 at College of Textiles, NC State University**. The whole process takes around **15-20 minutes** and you will get a **free T-shirt**. 
+I am collecting body measurement data from female college students to support my dissertation research. You data will be collected in **room 3412 at College of Textiles, NC State University**. The whole process takes around **less than 10 minutes** and you will get a **free T-shirt**. 
 
 You can find a digital copy of the consent form by clicking [HERE](https://drive.google.com/a/ncsu.edu/file/d/0By1ZOfLoXEBbd3FON1M4SjluR3M/view?usp=sharing). You will be asked to read and sign a paper copy of the consent form when you come for body scanning. 
 
