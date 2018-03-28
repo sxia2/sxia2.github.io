@@ -26,6 +26,7 @@ Investigation to increase customer’s satisfaction and discover potential marke
    -	Predict additional body measurements from images using regression models.
    -  [Data collecting](https://sxia2.github.io/research/dissertation) 
    -  [Flyer](https://sxia2.github.io/projects_data/FitApp.jpg) 
+   -  [T-shirt Flyer](https://sxia2.github.io/projects_data/T-shirt.jpg) 
 
 ### Course Project 
 *(Fall 2016)*  
