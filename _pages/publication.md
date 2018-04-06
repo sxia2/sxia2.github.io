@@ -14,7 +14,7 @@ title: "Publication"
 
 ---
 ### Conference 
-**Xia, S.**, Guo, S., Li, J., & Istook, C. (2017, November). *Comparison of body measuring techniques: whole body scanner, handheld scanner, and tape measure*. Poster session presented at the annual conference of International Textile and Apparel, St. Petersburg, FL.  
+**Xia, S.**, Guo, S., Li, J., & Istook, C. (2017, November). [*Comparison of body measuring techniques: whole body scanner, handheld scanner, and tape measure*](https://lib.dr.iastate.edu/cgi/viewcontent.cgi?article=2101&context=itaa_proceedings). Poster session presented at the annual conference of International Textile and Apparel, St. Petersburg, FL.  
 
 **Xia, S.**, & Istook, C. (2014, November). [*Application of body shape factor in sizing design using SizeUSA data*](http://cdm16001.contentdm.oclc.org/cdm/compoundobject/collection/p16001coll5/id/17785/rec/185). Oral session presented at the annual conference of International Textile and Apparel, Charlotte, NC.
 
