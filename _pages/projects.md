@@ -13,6 +13,7 @@ title: "Projects"
   - [Textile and Accessories Designs](https://sxia2.github.io/project/textile)  
 
 ### Programs
+  - [AutoPatternmaker](https://sxia2.github.io/projects_data/AutoPatternmaker)
   - [Web game Frogger 2017](https://sxia2.github.io/projects_data/Program4)
   
 ### Student Works
