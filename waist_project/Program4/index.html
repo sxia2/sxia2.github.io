@@ -11,7 +11,7 @@
     <script src="https://sxia2.github.io/waist_project/Program4/three.js"></script>
     <script src="https://sxia2.github.io/waist_project/Program4/Detector.js"></script>
     <script src="https://sxia2.github.io/waist_project/Program4/OrbitControls.js"></script>
-    <script src="https://sxia2.github.io/waist_project/Program4/OBJLoader.js"></script>
+    <script src="https://sxia2.github.io/waist_project/Program4/GLTFLoader.js"></script>
     <script src="https://sxia2.github.io/waist_project/Program4/MTLLoader.js"></script>
 
     <style>
@@ -96,60 +96,90 @@
             backLight = new THREE.DirectionalLight(0xffffff, 1.0);
             backLight.position.set(100, 0, -100).normalize();
 
-            var objLoader = new THREE.OBJLoader();
+            // var objLoader = new THREE.OBJLoader();
 
-            material = new THREE.MeshStandardMaterial({
+            // material = new THREE.MeshStandardMaterial({
 
-                color: 0xffffff,
-                roughness: 1.0,
-                metalness: 0.0,
-                map = null,
-                lightMap = null,
-                lightMapIntensity = 1.0,
-                aoMap = null,
-                aoMapIntensity = 1.0,
-                emissive = new Color(0x000000),
-                emissiveIntensity = 1.0,
-                emissiveMap = null,
-                bumpMap = null,
-                bumpScale = 1,
-                normalMap = null,
-                normalMapType = TangentSpaceNormalMap,
-                normalScale = new Vector2( 1, 1 ),
-                displacementMap = null,
-                displacementScale = 1,
-                displacementBias = 0,
-                roughnessMap = null,
-                
+            //     color: 0xffffff,
+            //     roughness: 1.0,
+            //     metalness: 0.0,
+            //     map = null,
+            //     lightMap = null,
+            //     lightMapIntensity = 1.0,
+            //     aoMap = null,
+            //     aoMapIntensity = 1.0,
+            //     emissive = new Color(0x000000),
+            //     emissiveIntensity = 1.0,
+            //     emissiveMap = null,
+            //     bumpMap = null,
+            //     bumpScale = 1,
+            //     normalMap = null,
+            //     normalMapType = TangentSpaceNormalMap,
+            //     normalScale = new Vector2( 1, 1 ),
+            //     displacementMap = null,
+            //     displacementScale = 1,
+            //     displacementBias = 0,
+            //     roughnessMap = null,
 
-                // normalMap: normalMap,
-                // normalScale: 1,
 
-                // aoMap: 1,
-                // aoMapIntensity: 1,
+            //     // normalMap: normalMap,
+            //     // normalScale: 1,
 
-                // displacementMap: displacementMap,
-                // displacementScale: settings.displacementScale,
-                // displacementBias: - 0.428408, // from original model
+            //     // aoMap: 1,
+            //     // aoMapIntensity: 1,
 
-                // envMap: reflectionCube,
-                // envMapIntensity: settings.envMapIntensity,
+            //     // displacementMap: displacementMap,
+            //     // displacementScale: settings.displacementScale,
+            //     // displacementBias: - 0.428408, // from original model
 
-                // side: THREE.DoubleSide
+            //     // envMap: reflectionCube,
+            //     // envMapIntensity: settings.envMapIntensity,
 
-            });
+            //     // side: THREE.DoubleSide
 
-            // objLoader.setMaterials(mirrorMaterial);
-            objLoader.load('https://sxia2.github.io/waist_project/Program4/assets/female-croupier-2013-03-26.obj', function (object) {
-                const geometry = object.children[0].geometry;
-                geometry.attributes.uv2 = geometry.attributes.uv;
-                geometry.center();
+            // });
 
-                mesh = new THREE.Mesh(geometry, material);
-                mesh.scale.multiplyScalar(25);
-                scene.add(object);
+            // // objLoader.setMaterials(mirrorMaterial);
+            // objLoader.load('https://sxia2.github.io//waist_project/SS%20Female.obj', function (object) {
+            //     // const geometry = object.children[0].geometry;
+            //     // geometry.attributes.uv2 = geometry.attributes.uv;
+            //     // geometry.center();
 
-            });
+            //     // mesh = new THREE.Mesh(geometry, material);
+            //     // mesh.scale.multiplyScalar(25);
+            //     scene.add(object);
+
+            // });
+
+            const loader = new GLTFLoader();
+            loader.load(
+                // resource URL
+                'https://sxia2.github.io//waist_project/SS%20Female0.glb',
+                // called when the resource is loaded
+                function (gltf) {
+
+                    scene.add(gltf.scene);
+
+                    // gltf.animations; // Array<THREE.AnimationClip>
+                    // gltf.scene; // THREE.Group
+                    // gltf.scenes; // Array<THREE.Group>
+                    // gltf.cameras; // Array<THREE.Camera>
+                    // gltf.asset; // Object
+
+                // },
+                // // called while loading is progressing
+                // function (xhr) {
+
+                //     console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+
+                // },
+                // // called when loading has errors
+                // function (error) {
+
+                //     console.log('An error happened');
+
+                }
+            );
 
             /* Renderer */
 
