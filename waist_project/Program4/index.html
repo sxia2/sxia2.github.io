@@ -78,7 +78,7 @@
 
             /* Camera */
 
-            camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
+            camera = new THREE.PerspectiveCamera(window.innerHeight/10, window.innerWidth / window.innerHeight, 1, 1000);
             camera.position.z = 3;
 
             /* Scene */
@@ -109,18 +109,20 @@
             });
 
             // objLoader.setMaterials(mirrorMaterial);
-            objLoader.load('https://sxia2.github.io/waist_project/Program4/assets/SSFemale.obj', function (object) {
-                const geometry = object.children[0].geometry;
-                geometry.attributes.uv2 = geometry.attributes.uv;
-                geometry.center();
+            objLoader.load('./assets/SSFemale0.obj', function (object) {
+                // const geometry = object.children[0].geometry;
+                // geometry.attributes.uv2 = geometry.attributes.uv;
+                // geometry.center();
 
-                mesh = new THREE.Mesh(geometry, material);
-                mesh.scale.multiplyScalar(25);
+                // mesh = new THREE.Mesh(geometry, material);
+                // mesh.scale.multiplyScalar(25);
                 scene.add(object);
 
             });
 
-
+            // camera.position = objLoader.position;
+            boundingBox = new THREE.Box3();
+            center = boundingBox.getCenter();
 
             /* Renderer */
 
@@ -129,19 +131,22 @@
             renderer.setSize(window.innerWidth, window.innerHeight);
             renderer.setClearColor(new THREE.Color("hsl(10, 10%, 10%)"));
 
-            container.appendChild(renderer.domElement);
 
             /* Controls */
 
             controls = new THREE.OrbitControls(camera, renderer.domElement);
             controls.enableDamping = true;
             controls.dampingFactor = 0.25;
-            controls.enableZoom = false;
-
+            controls.enableZoom = true;
+            controls.minPolarAngle = 3.14/4
+            controls.maxPolarAngle = 3.14/4
             /* Events */
 
             window.addEventListener('resize', onWindowResize, false);
             window.addEventListener('keydown', onKeyboardEvent, false);
+
+            container.appendChild(renderer.domElement);
+
 
         }
 
