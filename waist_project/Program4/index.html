@@ -97,12 +97,56 @@
             backLight.position.set(100, 0, -100).normalize();
 
             var objLoader = new THREE.OBJLoader();
-            objLoader.load('https://sxia2.github.io/waist_project/Program4/assets/female-croupier-2013-03-26.obj', function (object) {
-                // obj.material.color.set(0xFFB6C1);
-                // object.traverse(function (child) {
-                //     child.material.color.setHex(0x00FF00);
-                // });
 
+            material = new THREE.MeshStandardMaterial({
+
+                color: 0xffffff,
+                roughness: 1.0,
+                metalness: 0.0,
+                map = null,
+                lightMap = null,
+                lightMapIntensity = 1.0,
+                aoMap = null,
+                aoMapIntensity = 1.0,
+                emissive = new Color(0x000000),
+                emissiveIntensity = 1.0,
+                emissiveMap = null,
+                bumpMap = null,
+                bumpScale = 1,
+                normalMap = null,
+                normalMapType = TangentSpaceNormalMap,
+                normalScale = new Vector2( 1, 1 ),
+                displacementMap = null,
+                displacementScale = 1,
+                displacementBias = 0,
+                roughnessMap = null,
+                
+
+                // normalMap: normalMap,
+                // normalScale: 1,
+
+                // aoMap: 1,
+                // aoMapIntensity: 1,
+
+                // displacementMap: displacementMap,
+                // displacementScale: settings.displacementScale,
+                // displacementBias: - 0.428408, // from original model
+
+                // envMap: reflectionCube,
+                // envMapIntensity: settings.envMapIntensity,
+
+                // side: THREE.DoubleSide
+
+            });
+
+            // objLoader.setMaterials(mirrorMaterial);
+            objLoader.load('https://sxia2.github.io/waist_project/Program4/assets/female-croupier-2013-03-26.obj', function (object) {
+                const geometry = object.children[0].geometry;
+                geometry.attributes.uv2 = geometry.attributes.uv;
+                geometry.center();
+
+                mesh = new THREE.Mesh(geometry, material);
+                mesh.scale.multiplyScalar(25);
                 scene.add(object);
 
             });
@@ -147,7 +191,7 @@
 
                 if (lighting) {
 
-                    ambient.intensity = 0.75;
+                    ambient.intensity = 0.25;
                     scene.add(keyLight);
                     scene.add(fillLight);
                     scene.add(backLight);
