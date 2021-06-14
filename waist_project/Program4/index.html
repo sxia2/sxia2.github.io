@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <title>WebGL 3D Model Viewer Using three.js</title>
@@ -12,50 +13,47 @@
     <script src="https://sxia2.github.io/waist_project/Program4/OrbitControls.js"></script>
     <script src="https://sxia2.github.io/waist_project/Program4/OBJLoader.js"></script>
     <script src="https://sxia2.github.io/waist_project/Program4/MTLLoader.js"></script>
-    <script src="./main.js"></script>
+
     <style>
-        body {
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-            background: hsl(0, 0%, 10%);
+        .myDiv {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
         }
 
-        p {
-            margin: 0;
-            padding: 0;
-        }
-
-        .left,
-        .right {
-            position: absolute;
-            color: #fff;
-            font-family: Geneva, sans-serif;
-        }
-
-        .left {
-            bottom: 1em;
-            left: 1em;
-            text-align: left;
-        }
-
-        .right {
-            top: 0;
-            right: 0;
-            text-align: right;
-        }
-
-        a {
-            color: #f58231;
+        table,
+        th,
+        td {
+            border: 1px solid black;
         }
     </style>
-
 </head>
+
 <body>
-
-    <div class="left">
-
-    </div>
+    <table>
+        <tr>
+            <th>
+                <p>Month</p>
+            </th>
+            <th>
+                <p>Month</p>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p>Month</p>
+            </td>
+            <td id="webgl-container"> </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Month</p>
+            </td>
+            <td>
+                <p>Month</p>
+            </td>
+        </tr>
+    </table>
 
     <script>
 
@@ -73,8 +71,8 @@
 
         function init() {
 
-            container = document.createElement('div');
-            document.body.appendChild(container);
+            container = document.getElementById("webgl-container")
+            // document.body.appendChild(container);
 
             /* Camera */
 
@@ -84,7 +82,7 @@
             /* Scene */
 
             scene = new THREE.Scene();
-            lighting = false;
+            lighting = true;
 
             ambient = new THREE.AmbientLight(0xffffff, 1.0);
             scene.add(ambient);
@@ -98,26 +96,14 @@
             backLight = new THREE.DirectionalLight(0xffffff, 1.0);
             backLight.position.set(100, 0, -100).normalize();
 
-            /* Model */
+            var objLoader = new THREE.OBJLoader();
+            objLoader.load('https://sxia2.github.io/waist_project/Program4/assets/female-croupier-2013-03-26.obj', function (object) {
+                // obj.material.color.set(0xFFB6C1);
+                // object.traverse(function (child) {
+                //     child.material.color.setHex(0x00FF00);
+                // });
 
-            var mtlLoader = new THREE.MTLLoader();
-            mtlLoader.setBaseUrl('assets/');
-            mtlLoader.setPath('assets/');
-            mtlLoader.load('female-croupier-2013-03-26.mtl', function (materials) {
-
-                materials.preload();
-
-                materials.materials.default.map.magFilter = THREE.NearestFilter;
-                materials.materials.default.map.minFilter = THREE.LinearFilter;
-
-                var objLoader = new THREE.OBJLoader();
-                objLoader.setMaterials(materials);
-                objLoader.setPath('assets/');
-                objLoader.load('female-croupier-2013-03-26.obj', function (object) {
-
-                    scene.add(object);
-
-                });
+                scene.add(object);
 
             });
 
@@ -126,7 +112,7 @@
             renderer = new THREE.WebGLRenderer();
             renderer.setPixelRatio(window.devicePixelRatio);
             renderer.setSize(window.innerWidth, window.innerHeight);
-            renderer.setClearColor(new THREE.Color("hsl(0, 0%, 10%)"));
+            renderer.setClearColor(new THREE.Color("hsl(10, 10%, 10%)"));
 
             container.appendChild(renderer.domElement);
 
@@ -161,7 +147,7 @@
 
                 if (lighting) {
 
-                    ambient.intensity = 0.25;
+                    ambient.intensity = 0.75;
                     scene.add(keyLight);
                     scene.add(fillLight);
                     scene.add(backLight);
@@ -196,6 +182,6 @@
         }
 
     </script>
-
 </body>
+
 </html>
