@@ -497,7 +497,8 @@ function loadFroger() {
 }
 function main() {
     loadFroger();
-    window.onkeydown = checkKey;
+    //window.onkeydown = checkKey;
+	
   
 
 
