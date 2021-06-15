@@ -12,29 +12,58 @@
     <script src="https://sxia2.github.io/waist_project/Program4/Detector.js"></script>
     <script src="https://sxia2.github.io/waist_project/Program4/OrbitControls.js"></script>
     <script src="https://sxia2.github.io/waist_project/Program4/OBJLoader.js"></script>
-    <!-- <script src="https://sxia2.github.io/waist_project/Program4/GLTFLoader.js"></script> -->
     <script src="https://sxia2.github.io/waist_project/Program4/RoomEnvironment.js"></script>
-    <script src="https://sxia2.github.io/waist_project/Program4/dat.gui.module.js"></script>
-
-    <!-- <script src="https://sxia2.github.io/waist_project/Program4/Box3.js"></script> -->
 
     <style>
-        .myDiv {
-            border: 5px outset red;
-            background-color: lightblue;
-            text-align: center;
+        tabletable {
+            table-layout: fixed;
         }
 
-        table,
+
         th,
         td {
             border: 1px solid black;
+        }
+
+        .slidecontainer {
+            width: 100%;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 25px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background: #04AA6D;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            background: #04AA6D;
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
-    <table>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
             <th>
                 <p>Measurement</p>
@@ -43,211 +72,262 @@
             <th>
                 <p>3D view</p>
             </th>
+            <th>
+                <p>Control bar</p>
+            </th>
         </tr>
         <tr>
             <td>
                 <p>Subject height:</p>
                 <p id="height">null</p>
-                <p>Current waist height:</p>
-
-                <p id="plane_location">null</p>
             </td>
             <td id="webgl-container"> </td>
-        </tr>
-        <tr>
             <td>
-                <p>Month</p>
-            </td>
-            <td>
-                <p>Month</p>
+                <div class="slidecontainer">
+                    <input type="range" orient="vertical" id="my_waist">
+                    <p>Found waist location: <span id="my_waist_reading"></span></p>
+                </div>
             </td>
         </tr>
     </table>
+    <script src="./d3.v3.min.js"></script>
 
+    <script type="text/javascript"charset="utf-8">
+        d3.text("./obj_list_test.csv", function(data) {
+            var parsedCSV = d3.csv.parseRows(data);
+            console.log(parsedCSV)
+            var container_table = d3.select("body")
+                .append("table")
+
+                .selectAll("tr")
+                    .data(parsedCSV).enter()
+                    .append("tr")
+
+                .selectAll("td")
+                    .data(function(d) { return d; }).enter()
+                    .append("td")
+                    .text(function(d) { return d; });
+        });
+    </script>
     <script>
+        var PATH_test = 'https://sxia2.github.io/waist_project/Program4/assets/SSFemale.obj'
 
-        if (!Detector.webgl) {
-            Detector.addGetWebGLMessage();
-        }
-
-        var container;
-        var ratio = 1000
-        var camera, controls, scene, renderer;
-        var lighting, ambient, keyLight, fillLight, backLight;
-        var path = 'https://sxia2.github.io/waist_project/Program4/assets/SSFemale.obj'
-        init();
-        animate();
+        function render_obj(PATH) {
 
 
-        function init() {
+            if (!Detector.webgl) {
+                Detector.addGetWebGLMessage();
+            }
 
-            container = document.getElementById("webgl-container")
-            // document.body.appendChild(container);
+            var container;
+            var ratio = 1000
+            var camera, controls, scene, renderer;
+            var lighting, ambient, keyLight, fillLight, backLight;
+            var my_waist = document.getElementById("my_waist");
+            var my_waist_reading = document.getElementById("my_waist_reading");
 
-
-
-            renderer = new THREE.WebGLRenderer();
-            renderer.setPixelRatio(window.devicePixelRatio);
-            renderer.setSize(window.innerWidth, window.innerHeight);
-            // renderer.setClearColor(new THREE.Color("hsl(10, 10%, 10%)"));
-
-            container.appendChild(renderer.domElement);
-
-            /* Scene */
-            pmremGenerator = new THREE.PMREMGenerator(renderer);
-            scene = new THREE.Scene();
-            scene.background = new THREE.Color(0x888888);
-            room = new THREE.RoomEnvironment()
-            scene.environment = pmremGenerator.fromScene(room, 0.04).texture;
-
-            var ambient = new THREE.AmbientLight(0xffffff, 0.5);
-            scene.add(ambient);
-
-            var light1 = new THREE.PointLight(0xffffff, 1, 0);
-            light1.position.set(0, 200, 0);
-            scene.add(light1);
-
-            var light2 = new THREE.PointLight(0xffffff, 1, 0);
-            light2.position.set(100, 200, 100);
-            scene.add(light2);
-
-            var light3 = new THREE.PointLight(0xffffff, 1, 0);
-            light3.position.set(- 100, - 200, - 100);
-            scene.add(light3);
-            /* Camera */
-
-            camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 100);
-            camera.position.set(0, 0, 3.5);
-            camera.lookAt(0, 0, 0);
-            camera.updateProjectionMatrix()
-            var ship_material = new THREE.MeshPhongMaterial({
-
-                color: 0x64747c,
-                emissive: 0x0,
-                specular: 0x111111,
-                shininess: 30,
-                flatShading: false,
-                // wireframe: true
-
-            });
-            var objLoader = new THREE.OBJLoader();
-            obj_loaded = objLoader.load(path,
-                function (obj) {
-                    obj.traverse(function (child) {
-                        // if (child instanceof THREE.Mesh) {
-                        child.material = ship_material;
-                        // }
-                    });
-                    obj.scale.set(1 / ratio, 1 / ratio, 1 / ratio)
-                    scene.add(obj);
-                    // console.log(obj)
-                    obj_loaded = obj
-                    // console.log(obj_loaded)
-                    var box = new THREE.Box3().setFromObject(obj);
-                    console.log(box.size().y)
-                    document.getElementById("height").innerHTML = (box.size().y*ratio).toFixed(2);
-                    document.getElementById("plane_location").innerHTML = (plane.position.y*ratio+0.5*box.size().y*ratio).toFixed(2);
-                    obj.translateY(-0.5*box.size().y);
-                },
-                // called when loading is in progresses
-                function (xhr) {
-
-                    console.log((xhr.loaded / xhr.total * 100) + '% loaded');
-
-                },
-                // called when loading has errors
-                function (error) {
-
-                    console.log('An error happened');
-
-                }
-            );
-
-            /* define a plane*/
-            geometry = new THREE.PlaneGeometry(1, 1);
-            material = new THREE.MeshPhongMaterial({
-                color: 0xffff00, side: THREE.DoubleSide, opacity: 0.5,
-                transparent: true
-            });
-            plane = new THREE.Mesh(geometry, material);
-            plane.lookAt(new THREE.Vector3(0, 1, 0));
-            // plane.translateZ(-0.05);
-            scene.add(plane);
+            // my_waist.min = 10
+            // console.log(my_waist.min)
+            var start_pos_ratio = 0.25
+            var center_pos_ratio = 0.5
+            var end_pos_ratio = 0.75
+            var obj_display_ratio = 0.75
+            init(PATH);
+            animate();
 
 
-            
+            function init(path) {
 
-            /* Renderer */
-
-            /* Controls */
-
-            controls = new THREE.OrbitControls(camera, renderer.domElement);
-            controls.enableDamping = true;
-            controls.dampingFactor = 0.25;
-            controls.enableZoom = true;
-            // controls.minPolarAngle = 3.14 / 4
-            // controls.maxPolarAngle = 3.14 / 4
-            /* Events */
-
-            window.addEventListener('resize', onWindowResize, false);
-            window.addEventListener('keydown', onKeyboardEvent, false);
+                container = document.getElementById("webgl-container")
+                // document.body.appendChild(container);
 
 
 
-        }
+                renderer = new THREE.WebGLRenderer();
+                renderer.setPixelRatio(window.devicePixelRatio);
+                renderer.setSize(window.innerWidth * obj_display_ratio, window.innerHeight * obj_display_ratio);
+                // renderer.setClearColor(new THREE.Color("hsl(10, 10%, 10%)"));
+
+                container.appendChild(renderer.domElement);
+
+                /* Scene */
+                pmremGenerator = new THREE.PMREMGenerator(renderer);
+                scene = new THREE.Scene();
+                scene.background = new THREE.Color(0xaaaaaa);
+                room = new THREE.RoomEnvironment()
+                scene.environment = pmremGenerator.fromScene(room, 0.04).texture;
+
+                var ambient = new THREE.AmbientLight(0xffffff, 0.5);
+                scene.add(ambient);
+
+                var light1 = new THREE.PointLight(0xffffff, 1, 0);
+                light1.position.set(0, 200, 0);
+                scene.add(light1);
+
+                var light2 = new THREE.PointLight(0xffffff, 1, 0);
+                light2.position.set(100, 200, 100);
+                scene.add(light2);
+
+                var light3 = new THREE.PointLight(0xffffff, 1, 0);
+                light3.position.set(- 100, - 200, - 100);
+                scene.add(light3);
+                /* Camera */
+
+                camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 100);
+                camera.position.set(0, 0.05, 3);
+                camera.lookAt(0, 0, 0);
+                camera.updateProjectionMatrix()
 
 
-        function onWindowResize() {
+                /* define a plane*/
+                geometry = new THREE.PlaneGeometry(1, 1);
+                material = new THREE.MeshPhongMaterial({
+                    color: 0xffff00, side: THREE.DoubleSide, opacity: 0.75,
+                    transparent: true
+                });
+                plane = new THREE.Mesh(geometry, material);
+                plane.lookAt(new THREE.Vector3(0, 1, 0));
+                // plane.translateZ(0)
+                scene.add(plane);
 
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
+                var ship_material = new THREE.MeshPhongMaterial({
 
-            renderer.setSize(window.innerWidth, window.innerHeight);
+                    color: 0x64747c,
+                    emissive: 0x0,
+                    specular: 0x111111,
+                    shininess: 30,
+                    flatShading: false,
+                    // wireframe: true
 
-        }
+                });
+                var objLoader = new THREE.OBJLoader();
+                obj_loaded = objLoader.load(path,
+                    function (obj) {
+                        obj.traverse(function (child) {
+                            // if (child instanceof THREE.Mesh) {
+                            child.material = ship_material;
+                            // }
+                        });
+                        obj.scale.set(1 / ratio, 1 / ratio, 1 / ratio)
+                        scene.add(obj);
+                        // console.log(obj)
+                        obj_loaded = obj
+                        // console.log(obj_loaded)
+                        var box = new THREE.Box3().setFromObject(obj);
+                        console.log(box.size().y)
+                        document.getElementById("height").innerHTML = (box.size().y * ratio).toFixed(2);
+                        // obj start with the center position
+                        obj.translateY(-center_pos_ratio * box.size().y);
+                        var box_new = new THREE.Box3().setFromObject(obj);
+                        // plane start at the lower bound
+                        // the lower bound is based on the total height and its ratio/percentage
+                        console.log(box_new.min.y)
+                        console.log(box_new.max.y)
+                        plane_lower_bound = box_new.min.y + (box_new.max.y - box_new.min.y) * start_pos_ratio
+                        plane_upper_bound = box_new.min.y + (box_new.max.y - box_new.min.y) * end_pos_ratio
+                        // plane.translateZ(plane_lower_bound);
 
-        function onKeyboardEvent(e) {
+                        my_waist.min = (plane_lower_bound * ratio + 0.5 * box.size().y * ratio).toFixed(2);
+                        my_waist.max = (plane_upper_bound * ratio + 0.5 * box.size().y * ratio).toFixed(2);
+                        my_waist.value = my_waist_reading.innerHTML = (0.5 * box.size().y * ratio).toFixed(2);
+                        //  = 0.5 * box.size().y * ratio;
+                        var waist_current_plane_loc = plane.position.z;
+                        my_waist.oninput = function () {
+                            my_waist.value = my_waist_reading.innerHTML = this.value;
+                            console.log(this.value)
+                            waist_new_plane_loc = (this.value - 0.5 * box.size().y * ratio) / ratio;
+                            plane.translateZ(waist_new_plane_loc - waist_current_plane_loc);
+                            waist_current_plane_loc = waist_new_plane_loc
+                        }
 
-            if (e.code === 'KeyL') {
+                    },
+                    // called when loading is in progresses
+                    function (xhr) {
 
-                lighting = !lighting;
+                        console.log((xhr.loaded / xhr.total * 100) + '% loaded');
 
-                if (lighting) {
+                    },
+                    // called when loading has errors
+                    function (error) {
 
-                    ambient.intensity = 0.25;
-                    scene.add(keyLight);
-                    scene.add(fillLight);
-                    scene.add(backLight);
+                        console.log('An error happened');
 
-                } else {
+                    }
+                );
 
-                    ambient.intensity = 1.0;
-                    scene.remove(keyLight);
-                    scene.remove(fillLight);
-                    scene.remove(backLight);
+
+                /* Renderer */
+
+                /* Controls */
+
+                controls = new THREE.OrbitControls(camera, renderer.domElement);
+                controls.enableDamping = true;
+                controls.dampingFactor = 0.25;
+                controls.enableZoom = true;
+                // controls.minPolarAngle = 3.14 / 4
+                // controls.maxPolarAngle = 3.14 / 4
+                /* Events */
+
+                window.addEventListener('resize', onWindowResize, false);
+                window.addEventListener('keydown', onKeyboardEvent, false);
+
+
+
+            }
+
+
+            function onWindowResize() {
+
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+
+                renderer.setSize(window.innerWidth, window.innerHeight);
+
+            }
+
+            function onKeyboardEvent(e) {
+
+                if (e.code === 'KeyL') {
+
+                    lighting = !lighting;
+
+                    if (lighting) {
+
+                        ambient.intensity = 0.25;
+                        scene.add(keyLight);
+                        scene.add(fillLight);
+                        scene.add(backLight);
+
+                    } else {
+
+                        ambient.intensity = 1.0;
+                        scene.remove(keyLight);
+                        scene.remove(fillLight);
+                        scene.remove(backLight);
+
+                    }
 
                 }
 
             }
 
+            function animate() {
+
+                requestAnimationFrame(animate);
+
+                controls.update();
+
+                render();
+
+            }
+
+            function render() {
+
+                renderer.render(scene, camera);
+
+            }
         }
-
-        function animate() {
-
-            requestAnimationFrame(animate);
-
-            controls.update();
-
-            render();
-
-        }
-
-        function render() {
-
-            renderer.render(scene, camera);
-
-        }
-
+        render_obj(PATH_test)
     </script>
 </body>
 
