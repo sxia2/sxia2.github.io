@@ -14,6 +14,8 @@
     <script src="https://sxia2.github.io/waist_project/Program4/OBJLoader.js"></script>
     <!-- <script src="https://sxia2.github.io/waist_project/Program4/GLTFLoader.js"></script> -->
     <script src="https://sxia2.github.io/waist_project/Program4/RoomEnvironment.js"></script>
+    <script src="https://sxia2.github.io/waist_project/Program4/dat.gui.module.js"></script>
+
     <!-- <script src="https://sxia2.github.io/waist_project/Program4/Box3.js"></script> -->
 
     <style>
@@ -35,15 +37,20 @@
     <table>
         <tr>
             <th>
-                <p>Month</p>
+                <p>Measurement</p>
+                <p>(mm)</p>
             </th>
             <th>
-                <p>Month</p>
+                <p>3D view</p>
             </th>
         </tr>
         <tr>
             <td>
-                <p>Month</p>
+                <p>Subject height:</p>
+                <p id="height">null</p>
+                <p>Current waist height:</p>
+
+                <p id="plane_location">null</p>
             </td>
             <td id="webgl-container"> </td>
         </tr>
@@ -138,7 +145,9 @@
                     // console.log(obj_loaded)
                     var box = new THREE.Box3().setFromObject(obj);
                     console.log(box.size().y)
-                    obj.translateY(-0.4*box.size().y);
+                    document.getElementById("height").innerHTML = (box.size().y*ratio).toFixed(2);
+                    document.getElementById("plane_location").innerHTML = (plane.position.y*ratio+0.5*box.size().y*ratio).toFixed(2);
+                    obj.translateY(-0.5*box.size().y);
                 },
                 // called when loading is in progresses
                 function (xhr) {
@@ -161,10 +170,12 @@
                 transparent: true
             });
             plane = new THREE.Mesh(geometry, material);
-            plane.lookAt(new THREE.Vector3(0, 0.75, 0));
-            // plane.translateZ(1);
+            plane.lookAt(new THREE.Vector3(0, 1, 0));
+            // plane.translateZ(-0.05);
             scene.add(plane);
 
+
+            
 
             /* Renderer */
 
