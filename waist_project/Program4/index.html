@@ -12,9 +12,9 @@
     <script src="https://sxia2.github.io/waist_project/Program4/Detector.js"></script>
     <script src="https://sxia2.github.io/waist_project/Program4/OrbitControls.js"></script>
     <script src="https://sxia2.github.io/waist_project/Program4/OBJLoader.js"></script>
-    <script src="https://sxia2.github.io/waist_project/Program4/GLTFLoader.js"></script>
+    <!-- <script src="https://sxia2.github.io/waist_project/Program4/GLTFLoader.js"></script> -->
     <script src="https://sxia2.github.io/waist_project/Program4/RoomEnvironment.js"></script>
-    <script src="https://sxia2.github.io/waist_project/Program4/Box3.js"></script>
+    <!-- <script src="https://sxia2.github.io/waist_project/Program4/Box3.js"></script> -->
 
     <style>
         .myDiv {
@@ -64,10 +64,10 @@
         }
 
         var container;
-
+        var ratio = 1000
         var camera, controls, scene, renderer;
         var lighting, ambient, keyLight, fillLight, backLight;
-
+        var path = 'https://sxia2.github.io/waist_project/Program4/assets/SSFemale.obj'
         init();
         animate();
 
@@ -77,13 +77,7 @@
             container = document.getElementById("webgl-container")
             // document.body.appendChild(container);
 
-            /* Camera */
 
-            camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
-            camera.position.set(0, 0, 5);
-            camera.lookAt(0, 0, 0);
-            // camera.zoom = 0.001
-            /* Renderer */
 
             renderer = new THREE.WebGLRenderer();
             renderer.setPixelRatio(window.devicePixelRatio);
@@ -93,53 +87,73 @@
             container.appendChild(renderer.domElement);
 
             /* Scene */
-            pmremGenerator = new THREE.PMREMGenerator( renderer );
+            pmremGenerator = new THREE.PMREMGenerator(renderer);
             scene = new THREE.Scene();
-            scene.background = new THREE.Color(0x444444);
-            scene.environment = pmremGenerator.fromScene( new RoomEnvironment(), 0.04 ).texture;
-            // const color = 0x3f7b9d
-            // const near = 10;
-            // const far = 100;
-            // scene.fog = new THREE.Fog(color, near, far);
+            scene.background = new THREE.Color(0x888888);
+            room = new THREE.RoomEnvironment()
+            scene.environment = pmremGenerator.fromScene(room, 0.04).texture;
 
-            // lighting = true;
-            // scene.background = new THREE.Color('white');
-
-            ambient = new THREE.AmbientLight(0xffffff, 0.5);
+            var ambient = new THREE.AmbientLight(0xffffff, 0.5);
             scene.add(ambient);
 
-            keyLight = new THREE.DirectionalLight(0xffffff, 0.5);
-            keyLight.position.set(0, 0, 5);
+            var light1 = new THREE.PointLight(0xffffff, 1, 0);
+            light1.position.set(0, 200, 0);
+            scene.add(light1);
 
-            fillLight = new THREE.DirectionalLight(0xffffff, 0.5);
-            fillLight.position.set(10, 10, 10);
+            var light2 = new THREE.PointLight(0xffffff, 1, 0);
+            light2.position.set(100, 200, 100);
+            scene.add(light2);
 
-            backLight = new THREE.DirectionalLight(0x4697c4, 0.5);
-            fillLight.position.set(10, 10, 10);
+            var light3 = new THREE.PointLight(0xffffff, 1, 0);
+            light3.position.set(- 100, - 200, - 100);
+            scene.add(light3);
+            /* Camera */
 
-            var objLoader = new THREE.OBJLoader();
-
+            camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 100);
+            camera.position.set(0, 0, 3.5);
+            camera.lookAt(0, 0, 0);
+            camera.updateProjectionMatrix()
             var ship_material = new THREE.MeshPhongMaterial({
 
-                color: 0x4282a6,
+                color: 0x64747c,
                 emissive: 0x0,
-                specular: 0xa44747,
-                shininess: 59,
+                specular: 0x111111,
+                shininess: 30,
                 flatShading: false,
                 // wireframe: true
 
             });
-
-            objLoader.load('./assets/SSFemale0.obj',
+            var objLoader = new THREE.OBJLoader();
+            obj_loaded = objLoader.load(path,
                 function (obj) {
                     obj.traverse(function (child) {
                         // if (child instanceof THREE.Mesh) {
                         child.material = ship_material;
                         // }
                     });
+                    obj.scale.set(1 / ratio, 1 / ratio, 1 / ratio)
                     scene.add(obj);
+                    // console.log(obj)
+                    obj_loaded = obj
+                    // console.log(obj_loaded)
+                    var box = new THREE.Box3().setFromObject(obj);
+                    console.log(box.size().y)
+                    obj.translateY(-0.4*box.size().y);
+                },
+                // called when loading is in progresses
+                function (xhr) {
+
+                    console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+
+                },
+                // called when loading has errors
+                function (error) {
+
+                    console.log('An error happened');
+
                 }
             );
+
             /* define a plane*/
             geometry = new THREE.PlaneGeometry(1, 1);
             material = new THREE.MeshPhongMaterial({
@@ -147,8 +161,12 @@
                 transparent: true
             });
             plane = new THREE.Mesh(geometry, material);
+            plane.lookAt(new THREE.Vector3(0, 0.75, 0));
+            // plane.translateZ(1);
             scene.add(plane);
 
+
+            /* Renderer */
 
             /* Controls */
 
@@ -156,8 +174,8 @@
             controls.enableDamping = true;
             controls.dampingFactor = 0.25;
             controls.enableZoom = true;
-            controls.minPolarAngle = 3.14 / 4
-            controls.maxPolarAngle = 3.14 / 4
+            // controls.minPolarAngle = 3.14 / 4
+            // controls.maxPolarAngle = 3.14 / 4
             /* Events */
 
             window.addEventListener('resize', onWindowResize, false);
