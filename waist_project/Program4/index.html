@@ -64,6 +64,106 @@
 </head>
 
 <body>
+    <div id="currentMonthTable"></div>
+    <p>this is a test</p>
+
+    <script>
+        // reference: http://jonathansoma.com/tutorials/d3/using-enter-and-append/
+        page = 'page1_'
+        //         ojb_list = "./obj_list.csv"
+        // parameter_list = "./parameter_list.csv"
+        ojb_list = "https://sxia2.github.io/waist_project/Program4/obj_list.csv"
+        parameter_list = "https://sxia2.github.io/waist_project/Program4/parameter_list.csv"
+        var data = d3.text(ojb_list, function (data) {
+            // console.log(data)
+            var parsedCSV = d3.csv.parseRows(data);
+            console.log(parsedCSV)
+            function filter_row(parsedCSV, page) {
+                parsedCSV_new = []
+                for (i = 0; i < parsedCSV.length; i++) {
+                    // console.log(page + RegExp('.*'))
+                    if (parsedCSV[i][0].includes(page)) {
+                        parsedCSV_new.push(parsedCSV[i])
+                    }
+                }
+                return parsedCSV_new
+            }
+
+            var parsedCSV_page = filter_row(parsedCSV, page)
+            var container_table = d3.select("#currentMonthTable")
+                .append("table");
+            var container_table_thread = container_table.append("thead").append("tr")
+                .selectAll("th")
+                .data(parsedCSV[0])
+                .enter().append("th")
+                .text(function (d) {
+                    return d;
+                });
+            var container_table_tbody = container_table.append("tbody").selectAll("tr")
+                .data(parsedCSV_page).enter()
+                .append("tr")
+                .selectAll("td")
+                .data(function (d) {
+                    // console.log('d')
+                    // console.log(d)
+                    return d;
+                }).enter()
+                .append("td")
+
+            // add page and subject label
+            container_table_tbody.filter(function (d) {
+                // console.log(d)
+                return d.split(', ')[0] == 'p';
+            }).append("p")
+                .text(function (d) { return d.split(', ')[1]; })
+
+            container_table_tbody.filter(function (d) {
+                // console.log(d)
+                return d.split(', ')[0] == 'webgl-container';
+            }).attr('id', function (d) { return d.split(', ').join('_'); })
+            // .text("div")
+            container_table_div = container_table_tbody.filter(function (d) {
+
+                // <div class="slidecontainer">
+                //     <input type="range" orient="vertical" id="my_waist">
+                //     <p>Found waist location: <span id="my_waist_reading"></span></p>
+                //     <p>Subject's height in mm: </p>
+                //     <p id="height">null</p>
+                // </div>
+                // console.log(d)
+                return d.split(', ')[0] == 'div';
+            }).append("div").attr('class', "slidecontainer")
+            container_table_div.append('input').attr('type', "range").attr('orient', "vertical").attr('id', function (d) { return 'my_waist' + '_' + d.split(', ')[1]; })
+            container_table_div.append('p').text('Found waist location: ').append('span').attr('id', function (d) { return 'my_waist_reading' + '_' + d.split(', ')[1]; })
+            container_table_div.append('p').text("Subject's height in mm: ")
+
+            container_table_div.append('p').attr('id', function (d) { return 'height' + '_' + d.split(', ')[1]; })
+            // .text("span")
+
+            // console.log(container_table)
+        });
+        // height coloumn need: ID_HEIGHT
+        data = d3.csv(parameter_list, function (data) {
+            // console.log(data)
+
+            for (var i = 0; i < data.length; i++) {
+                var PATH_test = data[i]['obj_path']
+                var ID_3D = data[i]['webgl-container_id']
+                var ID_HEIGHT = data[i]['height_id']
+                var ID_CONTROLER_READING = data[i]['my_waist_reading_id']
+                var ID_CONTROLER = data[i]['my_waist_id']
+                console.log(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER)
+                render_obj(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER)
+            }
+        });
+            // var PATH_test = 'https://sxia2.github.io/waist_project/Program4/assets/SSFemale.obj'
+            // var ID_3D = "webgl-container"
+            // var ID_HEIGHT = "height"
+            // var ID_CONTROLER_READING = "my_waist_reading"
+            // var ID_CONTROLER = "my_waist"
+            // render_obj(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER)
+
+    </script>
 
     <script>
 
@@ -274,103 +374,6 @@
 
             }
         }
-    </script>
-    <script type="text/javascript" charset="utf-8">
-        // reference: http://jonathansoma.com/tutorials/d3/using-enter-and-append/
-        page = 'page1_'
-        //         ojb_list = "./obj_list.csv"
-        // parameter_list = "./parameter_list.csv"
-        ojb_list = "https://sxia2.github.io/waist_project/Program4/obj_list.csv"
-        parameter_list = "https://sxia2.github.io/waist_project/Program4/parameter_list.csv"
-        d3.text(ojb_list, function (data) {
-            // console.log(data)
-            var parsedCSV = d3.csv.parseRows(data);
-            console.log(parsedCSV)
-            function filter_row(parsedCSV, page) {
-                parsedCSV_new = []
-                for (i = 0; i < parsedCSV.length; i++) {
-                    // console.log(page + RegExp('.*'))
-                    if (parsedCSV[i][0].includes(page)) {
-                        parsedCSV_new.push(parsedCSV[i])
-                    }
-                }
-                return parsedCSV_new
-            }
-
-            var parsedCSV_page = filter_row(parsedCSV, page)
-            var container_table = d3.select("body")
-                .append("table");
-            var container_table_thread = container_table.append("thead").append("tr")
-                .selectAll("th")
-                .data(parsedCSV[0])
-                .enter().append("th")
-                .text(function (d) {
-                    return d;
-                });
-            var container_table_tbody = container_table.append("tbody").selectAll("tr")
-                .data(parsedCSV_page).enter()
-                .append("tr")
-                .selectAll("td")
-                .data(function (d) {
-                    // console.log('d')
-                    // console.log(d)
-                    return d;
-                }).enter()
-                .append("td")
-
-            // add page and subject label
-            container_table_tbody.filter(function (d) {
-                // console.log(d)
-                return d.split(', ')[0] == 'p';
-            }).append("p")
-                .text(function (d) { return d.split(', ')[1]; })
-
-            container_table_tbody.filter(function (d) {
-                // console.log(d)
-                return d.split(', ')[0] == 'webgl-container';
-            }).attr('id', function (d) { return d.split(', ').join('_'); })
-            // .text("div")
-            container_table_div = container_table_tbody.filter(function (d) {
-
-                // <div class="slidecontainer">
-                //     <input type="range" orient="vertical" id="my_waist">
-                //     <p>Found waist location: <span id="my_waist_reading"></span></p>
-                //     <p>Subject's height in mm: </p>
-                //     <p id="height">null</p>
-                // </div>
-                // console.log(d)
-                return d.split(', ')[0] == 'div';
-            }).append("div").attr('class', "slidecontainer")
-            container_table_div.append('input').attr('type', "range").attr('orient', "vertical").attr('id', function (d) { return 'my_waist' + '_' + d.split(', ')[1]; })
-            container_table_div.append('p').text('Found waist location: ').append('span').attr('id', function (d) { return 'my_waist_reading' + '_' + d.split(', ')[1]; })
-            container_table_div.append('p').text("Subject's height in mm: ")
-
-            container_table_div.append('p').attr('id', function (d) { return 'height' + '_' + d.split(', ')[1]; })
-            // .text("span")
-
-            // console.log(container_table)
-        });
-        // height coloumn need: ID_HEIGHT
-        data = d3.csv(parameter_list, function (data) {
-            // console.log(data)
-
-            for (var i = 0; i < data.length; i++) {
-                var PATH_test = data[i]['obj_path']
-                var ID_3D = data[i]['webgl-container_id']
-                var ID_HEIGHT = data[i]['height_id']
-                var ID_CONTROLER_READING = data[i]['my_waist_reading_id']
-                var ID_CONTROLER = data[i]['my_waist_id']
-                console.log(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER)
-                render_obj(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER)
-            }
-        });
-        // var PATH_test = 'https://sxia2.github.io/waist_project/Program4/assets/SSFemale.obj'
-        // var ID_3D = "webgl-container"
-        // var ID_HEIGHT = "height"
-        // var ID_CONTROLER_READING = "my_waist_reading"
-        // var ID_CONTROLER = "my_waist"
-        // render_obj(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER)
-
     </script>
 
 </body>
