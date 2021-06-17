@@ -13,6 +13,7 @@
     <script src="https://sxia2.github.io/waist_project/Program4/OrbitControls.js"></script>
     <script src="https://sxia2.github.io/waist_project/Program4/OBJLoader.js"></script>
     <script src="https://sxia2.github.io/waist_project/Program4/RoomEnvironment.js"></script>
+    <script src="https://sxia2.github.io/waist_project/Program4/d3.v3.min.js"></script>
 
     <style>
         tabletable {
@@ -63,12 +64,9 @@
 </head>
 
 <body>
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
-            <th>
-                <p>Measurement</p>
-                <p>(mm)</p>
-            </th>
+
             <th>
                 <p>3D view</p>
             </th>
@@ -77,42 +75,20 @@
             </th>
         </tr>
         <tr>
-            <td>
-                <p>Subject height:</p>
-                <p id="height">null</p>
-            </td>
             <td id="webgl-container"> </td>
             <td>
                 <div class="slidecontainer">
                     <input type="range" orient="vertical" id="my_waist">
                     <p>Found waist location: <span id="my_waist_reading"></span></p>
+                    <p>Subject's height in mm: </p>
+                    <p id="height">null</p>
                 </div>
             </td>
         </tr>
-    </table>
-    <script src="./d3.v3.min.js"></script>
-
-    <script type="text/javascript"charset="utf-8">
-        d3.text("./obj_list_test.csv", function(data) {
-            var parsedCSV = d3.csv.parseRows(data);
-            console.log(parsedCSV)
-            var container_table = d3.select("body")
-                .append("table")
-
-                .selectAll("tr")
-                    .data(parsedCSV).enter()
-                    .append("tr")
-
-                .selectAll("td")
-                    .data(function(d) { return d; }).enter()
-                    .append("td")
-                    .text(function(d) { return d; });
-        });
-    </script>
+    </table> -->
     <script>
-        var PATH_test = 'https://sxia2.github.io/waist_project/Program4/assets/SSFemale.obj'
 
-        function render_obj(PATH) {
+        function render_obj(PATH, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER) {
 
 
             if (!Detector.webgl) {
@@ -123,30 +99,24 @@
             var ratio = 1000
             var camera, controls, scene, renderer;
             var lighting, ambient, keyLight, fillLight, backLight;
-            var my_waist = document.getElementById("my_waist");
-            var my_waist_reading = document.getElementById("my_waist_reading");
-
-            // my_waist.min = 10
-            // console.log(my_waist.min)
+            var my_waist = document.getElementById(ID_CONTROLER);
+            var my_waist_reading = document.getElementById(ID_CONTROLER_READING);
             var start_pos_ratio = 0.25
             var center_pos_ratio = 0.5
             var end_pos_ratio = 0.75
             var obj_display_ratio = 0.75
-            init(PATH);
+            init(PATH, ID_HEIGHT, ID_3D);
             animate();
 
 
-            function init(path) {
+            function init(path, id_height, id_3d) {
 
-                container = document.getElementById("webgl-container")
-                // document.body.appendChild(container);
-
-
+                container = document.getElementById(id_3d )
 
                 renderer = new THREE.WebGLRenderer();
+                renderer.domElement.id = id_3d+ '_canvas';
                 renderer.setPixelRatio(window.devicePixelRatio);
                 renderer.setSize(window.innerWidth * obj_display_ratio, window.innerHeight * obj_display_ratio);
-                // renderer.setClearColor(new THREE.Color("hsl(10, 10%, 10%)"));
 
                 container.appendChild(renderer.domElement);
 
@@ -185,7 +155,7 @@
                     color: 0xffff00, side: THREE.DoubleSide, opacity: 0.75,
                     transparent: true
                 });
-                plane = new THREE.Mesh(geometry, material);
+                var plane = new THREE.Mesh(geometry, material);
                 plane.lookAt(new THREE.Vector3(0, 1, 0));
                 // plane.translateZ(0)
                 scene.add(plane);
@@ -215,16 +185,16 @@
                         // console.log(obj_loaded)
                         var box = new THREE.Box3().setFromObject(obj);
                         console.log(box.size().y)
-                        document.getElementById("height").innerHTML = (box.size().y * ratio).toFixed(2);
+                        document.getElementById(id_height).innerHTML = (box.size().y * ratio).toFixed(2);
                         // obj start with the center position
                         obj.translateY(-center_pos_ratio * box.size().y);
                         var box_new = new THREE.Box3().setFromObject(obj);
                         // plane start at the lower bound
                         // the lower bound is based on the total height and its ratio/percentage
-                        console.log(box_new.min.y)
-                        console.log(box_new.max.y)
-                        plane_lower_bound = box_new.min.y + (box_new.max.y - box_new.min.y) * start_pos_ratio
-                        plane_upper_bound = box_new.min.y + (box_new.max.y - box_new.min.y) * end_pos_ratio
+                        // console.log(box_new.min.y)
+                        // console.log(box_new.max.y)
+                        var plane_lower_bound = box_new.min.y + (box_new.max.y - box_new.min.y) * start_pos_ratio
+                        var plane_upper_bound = box_new.min.y + (box_new.max.y - box_new.min.y) * end_pos_ratio
                         // plane.translateZ(plane_lower_bound);
 
                         my_waist.min = (plane_lower_bound * ratio + 0.5 * box.size().y * ratio).toFixed(2);
@@ -234,6 +204,7 @@
                         var waist_current_plane_loc = plane.position.z;
                         my_waist.oninput = function () {
                             my_waist.value = my_waist_reading.innerHTML = this.value;
+                            console.log('current ', path, id_height, id_3d)
                             console.log(this.value)
                             waist_new_plane_loc = (this.value - 0.5 * box.size().y * ratio) / ratio;
                             plane.translateZ(waist_new_plane_loc - waist_current_plane_loc);
@@ -264,14 +235,9 @@
                 controls.enableDamping = true;
                 controls.dampingFactor = 0.25;
                 controls.enableZoom = true;
-                // controls.minPolarAngle = 3.14 / 4
-                // controls.maxPolarAngle = 3.14 / 4
                 /* Events */
-
                 window.addEventListener('resize', onWindowResize, false);
                 window.addEventListener('keydown', onKeyboardEvent, false);
-
-
 
             }
 
@@ -327,8 +293,103 @@
 
             }
         }
-        render_obj(PATH_test)
     </script>
+    <script type="text/javascript" charset="utf-8">
+        // reference: http://jonathansoma.com/tutorials/d3/using-enter-and-append/
+        page = 'page1'
+        ojb_list = "https://sxia2.github.io/waist_project/Program4/obj_list_test.csv"
+        parameter_list = "https://sxia2.github.io/waist_project/Program4/parameter_list_test.csv"
+        d3.text(ojb_list, function (data) {
+            // console.log(data)
+            var parsedCSV = d3.csv.parseRows(data);
+            console.log(parsedCSV)
+            function filter_row(parsedCSV, page) {
+                parsedCSV_new = []
+                for (i = 0; i < parsedCSV.length; i++) {
+                    // console.log(page + RegExp('.*'))
+                    if (parsedCSV[i][0].includes(page)) {
+                        parsedCSV_new.push(parsedCSV[i])
+                    }
+                }
+                return parsedCSV_new
+            }
+
+            var parsedCSV_page = filter_row(parsedCSV, page)
+            var container_table = d3.select("body")
+                .append("table");
+            var container_table_thread = container_table.append("thead").append("tr")
+                .selectAll("th")
+                .data(parsedCSV[0])
+                .enter().append("th")
+                .text(function (d) {
+                    return d;
+                });
+            var container_table_tbody = container_table.append("tbody").selectAll("tr")
+                .data(parsedCSV_page).enter()
+                .append("tr")
+                .selectAll("td")
+                .data(function (d) {
+                    // console.log('d')
+                    // console.log(d)
+                    return d;
+                }).enter()
+                .append("td")
+
+            // add page and subject label
+            container_table_tbody.filter(function (d) {
+                // console.log(d)
+                return d.split(', ')[0] == 'p';
+            }).append("p")
+                .text(function (d) { return d.split(', ')[1]; })
+
+            container_table_tbody.filter(function (d) {
+                // console.log(d)
+                return d.split(', ')[0] == 'webgl-container';
+            }).attr('id', function (d) { return d.split(', ').join('_'); })
+            // .text("div")
+            container_table_div = container_table_tbody.filter(function (d) {
+
+                // <div class="slidecontainer">
+                //     <input type="range" orient="vertical" id="my_waist">
+                //     <p>Found waist location: <span id="my_waist_reading"></span></p>
+                //     <p>Subject's height in mm: </p>
+                //     <p id="height">null</p>
+                // </div>
+                // console.log(d)
+                return d.split(', ')[0] == 'div';
+            }).append("div").attr('class', "slidecontainer")
+            container_table_div.append('input').attr('type', "range").attr('orient', "vertical").attr('id', function (d) { return 'my_waist' + '_' + d.split(', ')[1]; })
+            container_table_div.append('p').text('Found waist location: ').append('span').attr('id', function (d) { return 'my_waist_reading' + '_' + d.split(', ')[1]; })
+            container_table_div.append('p').text("Subject's height in mm: ")
+
+            container_table_div.append('p').attr('id', function (d) { return 'height' + '_' + d.split(', ')[1]; })
+            // .text("span")
+
+            // console.log(container_table)
+        });
+        // height coloumn need: ID_HEIGHT
+        data = d3.csv(parameter_list, function (data) {
+            // console.log(data)
+
+            for (var i = 0; i < data.length; i++) {
+                var PATH_test = data[i]['obj_path']
+                var ID_3D = data[i]['webgl-container_id']
+                var ID_HEIGHT = data[i]['height_id']
+                var ID_CONTROLER_READING = data[i]['my_waist_reading_id']
+                var ID_CONTROLER = data[i]['my_waist_id']
+                console.log(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER)
+                render_obj(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER)
+            }
+        });
+        var PATH_test = 'https://sxia2.github.io/waist_project/Program4/assets/SSFemale.obj'
+        var ID_3D = "webgl-container"
+        var ID_HEIGHT = "height"
+        var ID_CONTROLER_READING = "my_waist_reading"
+        var ID_CONTROLER = "my_waist"
+        render_obj(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER)
+
+    </script>
+
 </body>
 
 </html>
