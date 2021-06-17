@@ -64,28 +64,7 @@
 </head>
 
 <body>
-    <!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
 
-            <th>
-                <p>3D view</p>
-            </th>
-            <th>
-                <p>Control bar</p>
-            </th>
-        </tr>
-        <tr>
-            <td id="webgl-container"> </td>
-            <td>
-                <div class="slidecontainer">
-                    <input type="range" orient="vertical" id="my_waist">
-                    <p>Found waist location: <span id="my_waist_reading"></span></p>
-                    <p>Subject's height in mm: </p>
-                    <p id="height">null</p>
-                </div>
-            </td>s
-        </tr>
-    </table> -->
     <script>
 
         function render_obj(PATH, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER) {
@@ -111,10 +90,12 @@
 
             function init(path, id_height, id_3d) {
 
-                container = document.getElementById(id_3d )
+                container = document.getElementById(id_3d)
+                console.log('id_3d')
+                console.log(id_3d)
 
                 renderer = new THREE.WebGLRenderer();
-                renderer.domElement.id = id_3d+ '_canvas';
+                renderer.domElement.id = id_3d + '_canvas';
                 renderer.setPixelRatio(window.devicePixelRatio);
                 renderer.setSize(window.innerWidth * obj_display_ratio, window.innerHeight * obj_display_ratio);
 
@@ -296,7 +277,9 @@
     </script>
     <script type="text/javascript" charset="utf-8">
         // reference: http://jonathansoma.com/tutorials/d3/using-enter-and-append/
-        page = 'page1'
+        page = 'page1_'
+        //         ojb_list = "./obj_list.csv"
+        // parameter_list = "./parameter_list.csv"
         ojb_list = "https://sxia2.github.io/waist_project/Program4/obj_list.csv"
         parameter_list = "https://sxia2.github.io/waist_project/Program4/parameter_list.csv"
         d3.text(ojb_list, function (data) {
