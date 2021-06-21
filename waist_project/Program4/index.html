@@ -70,10 +70,10 @@
     <script>
         // reference: http://jonathansoma.com/tutorials/d3/using-enter-and-append/
         page = 'page1_'
-        ojb_list = "./obj_list.csv"
-        parameter_list = "./parameter_list.csv"
-        // ojb_list = "https://sxia2.github.io/waist_project/Program4/obj_list.csv"
-        // parameter_list = "https://sxia2.github.io/waist_project/Program4/parameter_list.csv"
+        // ojb_list = "./obj_list.csv"
+        // parameter_list = "./parameter_list.csv"
+        ojb_list = "https://sxia2.github.io/waist_project/Program4/obj_list.csv"
+        parameter_list = "https://sxia2.github.io/waist_project/Program4/parameter_list.csv"
         var data = d3.text(ojb_list, function (data) {
             // console.log(data)
             var parsedCSV = d3.csv.parseRows(data);
