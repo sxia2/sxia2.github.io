@@ -1,145 +1,289 @@
-label,obj_path,webgl-container_id,height_id,my_waist_reading_id,my_waist_id
-page1_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506425_copied.obj,webgl-container_page1_0,height_page1_0,my_waist_reading_page1_0,my_waist_page1_0
-page1_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506371_copied.obj,webgl-container_page1_1,height_page1_1,my_waist_reading_page1_1,my_waist_page1_1
-page1_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2021477a_copied.obj,webgl-container_page1_2,height_page1_2,my_waist_reading_page1_2,my_waist_page1_2
-page1_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2021174_copied.obj,webgl-container_page1_3,height_page1_3,my_waist_reading_page1_3,my_waist_page1_3
-page1_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0505950_copied.obj,webgl-container_page1_4,height_page1_4,my_waist_reading_page1_4,my_waist_page1_4
-page1_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506898_copied.obj,webgl-container_page1_5,height_page1_5,my_waist_reading_page1_5,my_waist_page1_5
-page2_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4400a_copied.obj,webgl-container_page2_0,height_page2_0,my_waist_reading_page2_0,my_waist_page2_0
-page2_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506069_copied.obj,webgl-container_page2_1,height_page2_1,my_waist_reading_page2_1,my_waist_page2_1
-page2_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500036_copied.obj,webgl-container_page2_2,height_page2_2,my_waist_reading_page2_2,my_waist_page2_2
-page2_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507475_copied.obj,webgl-container_page2_3,height_page2_3,my_waist_reading_page2_3,my_waist_page2_3
-page2_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/1252_copied.obj,webgl-container_page2_4,height_page2_4,my_waist_reading_page2_4,my_waist_page2_4
-page2_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2021010_copied.obj,webgl-container_page2_5,height_page2_5,my_waist_reading_page2_5,my_waist_page2_5
-page3_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507767_copied.obj,webgl-container_page3_0,height_page3_0,my_waist_reading_page3_0,my_waist_page3_0
-page3_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4454_copied.obj,webgl-container_page3_1,height_page3_1,my_waist_reading_page3_1,my_waist_page3_1
-page3_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504240_copied.obj,webgl-container_page3_2,height_page3_2,my_waist_reading_page3_2,my_waist_page3_2
-page3_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/1325_copied.obj,webgl-container_page3_3,height_page3_3,my_waist_reading_page3_3,my_waist_page3_3
-page3_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504160_copied.obj,webgl-container_page3_4,height_page3_4,my_waist_reading_page3_4,my_waist_page3_4
-page3_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500829a_copied.obj,webgl-container_page3_5,height_page3_5,my_waist_reading_page3_5,my_waist_page3_5
-page4_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4314a_copied.obj,webgl-container_page4_0,height_page4_0,my_waist_reading_page4_0,my_waist_page4_0
-page4_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502574_copied.obj,webgl-container_page4_1,height_page4_1,my_waist_reading_page4_1,my_waist_page4_1
-page4_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506651_copied.obj,webgl-container_page4_2,height_page4_2,my_waist_reading_page4_2,my_waist_page4_2
-page4_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2496_copied.obj,webgl-container_page4_3,height_page4_3,my_waist_reading_page4_3,my_waist_page4_3
-page4_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4614_copied.obj,webgl-container_page4_4,height_page4_4,my_waist_reading_page4_4,my_waist_page4_4
-page4_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502985_copied.obj,webgl-container_page4_5,height_page4_5,my_waist_reading_page4_5,my_waist_page4_5
-page5_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2269_copied.obj,webgl-container_page5_0,height_page5_0,my_waist_reading_page5_0,my_waist_page5_0
-page5_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500289_copied.obj,webgl-container_page5_1,height_page5_1,my_waist_reading_page5_1,my_waist_page5_1
-page5_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504592_copied.obj,webgl-container_page5_2,height_page5_2,my_waist_reading_page5_2,my_waist_page5_2
-page5_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507446_copied.obj,webgl-container_page5_3,height_page5_3,my_waist_reading_page5_3,my_waist_page5_3
-page5_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0505488_copied.obj,webgl-container_page5_4,height_page5_4,my_waist_reading_page5_4,my_waist_page5_4
-page5_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0508142_copied.obj,webgl-container_page5_5,height_page5_5,my_waist_reading_page5_5,my_waist_page5_5
-page6_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5482_copied.obj,webgl-container_page6_0,height_page6_0,my_waist_reading_page6_0,my_waist_page6_0
-page6_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504202_copied.obj,webgl-container_page6_1,height_page6_1,my_waist_reading_page6_1,my_waist_page6_1
-page6_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2021206_copied.obj,webgl-container_page6_2,height_page6_2,my_waist_reading_page6_2,my_waist_page6_2
-page6_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502914_copied.obj,webgl-container_page6_3,height_page6_3,my_waist_reading_page6_3,my_waist_page6_3
-page6_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3787a_copied.obj,webgl-container_page6_4,height_page6_4,my_waist_reading_page6_4,my_waist_page6_4
-page6_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4076_copied.obj,webgl-container_page6_5,height_page6_5,my_waist_reading_page6_5,my_waist_page6_5
-page7_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504158_copied.obj,webgl-container_page7_0,height_page7_0,my_waist_reading_page7_0,my_waist_page7_0
-page7_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500491a_copied.obj,webgl-container_page7_1,height_page7_1,my_waist_reading_page7_1,my_waist_page7_1
-page7_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506589_copied.obj,webgl-container_page7_2,height_page7_2,my_waist_reading_page7_2,my_waist_page7_2
-page7_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504951_copied.obj,webgl-container_page7_3,height_page7_3,my_waist_reading_page7_3,my_waist_page7_3
-page7_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0505441_copied.obj,webgl-container_page7_4,height_page7_4,my_waist_reading_page7_4,my_waist_page7_4
-page7_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504423_copied.obj,webgl-container_page7_5,height_page7_5,my_waist_reading_page7_5,my_waist_page7_5
-page8_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5339_copied.obj,webgl-container_page8_0,height_page8_0,my_waist_reading_page8_0,my_waist_page8_0
-page8_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2804_copied.obj,webgl-container_page8_1,height_page8_1,my_waist_reading_page8_1,my_waist_page8_1
-page8_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2569_copied.obj,webgl-container_page8_2,height_page8_2,my_waist_reading_page8_2,my_waist_page8_2
-page8_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502934_copied.obj,webgl-container_page8_3,height_page8_3,my_waist_reading_page8_3,my_waist_page8_3
-page8_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507107_copied.obj,webgl-container_page8_4,height_page8_4,my_waist_reading_page8_4,my_waist_page8_4
-page8_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504572_copied.obj,webgl-container_page8_5,height_page8_5,my_waist_reading_page8_5,my_waist_page8_5
-page9_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0505031_copied.obj,webgl-container_page9_0,height_page9_0,my_waist_reading_page9_0,my_waist_page9_0
-page9_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4807_copied.obj,webgl-container_page9_1,height_page9_1,my_waist_reading_page9_1,my_waist_page9_1
-page9_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507878_copied.obj,webgl-container_page9_2,height_page9_2,my_waist_reading_page9_2,my_waist_page9_2
-page9_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502643_copied.obj,webgl-container_page9_3,height_page9_3,my_waist_reading_page9_3,my_waist_page9_3
-page9_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507769_copied.obj,webgl-container_page9_4,height_page9_4,my_waist_reading_page9_4,my_waist_page9_4
-page9_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504948_copied.obj,webgl-container_page9_5,height_page9_5,my_waist_reading_page9_5,my_waist_page9_5
-page10_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507096a_copied.obj,webgl-container_page10_0,height_page10_0,my_waist_reading_page10_0,my_waist_page10_0
-page10_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502743_copied.obj,webgl-container_page10_1,height_page10_1,my_waist_reading_page10_1,my_waist_page10_1
-page10_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3609_copied.obj,webgl-container_page10_2,height_page10_2,my_waist_reading_page10_2,my_waist_page10_2
-page10_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2867_copied.obj,webgl-container_page10_3,height_page10_3,my_waist_reading_page10_3,my_waist_page10_3
-page10_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2213a_copied.obj,webgl-container_page10_4,height_page10_4,my_waist_reading_page10_4,my_waist_page10_4
-page10_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507891_copied.obj,webgl-container_page10_5,height_page10_5,my_waist_reading_page10_5,my_waist_page10_5
-page11_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0509332_copied.obj,webgl-container_page11_0,height_page11_0,my_waist_reading_page11_0,my_waist_page11_0
-page11_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3590_copied.obj,webgl-container_page11_1,height_page11_1,my_waist_reading_page11_1,my_waist_page11_1
-page11_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5521_copied.obj,webgl-container_page11_2,height_page11_2,my_waist_reading_page11_2,my_waist_page11_2
-page11_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504916_copied.obj,webgl-container_page11_3,height_page11_3,my_waist_reading_page11_3,my_waist_page11_3
-page11_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/1449_copied.obj,webgl-container_page11_4,height_page11_4,my_waist_reading_page11_4,my_waist_page11_4
-page11_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500788_copied.obj,webgl-container_page11_5,height_page11_5,my_waist_reading_page11_5,my_waist_page11_5
-page12_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2463_copied.obj,webgl-container_page12_0,height_page12_0,my_waist_reading_page12_0,my_waist_page12_0
-page12_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5390_copied.obj,webgl-container_page12_1,height_page12_1,my_waist_reading_page12_1,my_waist_page12_1
-page12_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500292_copied.obj,webgl-container_page12_2,height_page12_2,my_waist_reading_page12_2,my_waist_page12_2
-page12_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506356_copied.obj,webgl-container_page12_3,height_page12_3,my_waist_reading_page12_3,my_waist_page12_3
-page12_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504809_copied.obj,webgl-container_page12_4,height_page12_4,my_waist_reading_page12_4,my_waist_page12_4
-page12_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507853_copied.obj,webgl-container_page12_5,height_page12_5,my_waist_reading_page12_5,my_waist_page12_5
-page13_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507485_copied.obj,webgl-container_page13_0,height_page13_0,my_waist_reading_page13_0,my_waist_page13_0
-page13_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5064_copied.obj,webgl-container_page13_1,height_page13_1,my_waist_reading_page13_1,my_waist_page13_1
-page13_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502829_copied.obj,webgl-container_page13_2,height_page13_2,my_waist_reading_page13_2,my_waist_page13_2
-page13_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0505333_copied.obj,webgl-container_page13_3,height_page13_3,my_waist_reading_page13_3,my_waist_page13_3
-page13_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5387a_copied.obj,webgl-container_page13_4,height_page13_4,my_waist_reading_page13_4,my_waist_page13_4
-page13_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2517_copied.obj,webgl-container_page13_5,height_page13_5,my_waist_reading_page13_5,my_waist_page13_5
-page14_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0509048_copied.obj,webgl-container_page14_0,height_page14_0,my_waist_reading_page14_0,my_waist_page14_0
-page14_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2023_copied.obj,webgl-container_page14_1,height_page14_1,my_waist_reading_page14_1,my_waist_page14_1
-page14_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504411_copied.obj,webgl-container_page14_2,height_page14_2,my_waist_reading_page14_2,my_waist_page14_2
-page14_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3786_copied.obj,webgl-container_page14_3,height_page14_3,my_waist_reading_page14_3,my_waist_page14_3
-page14_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506115a_copied.obj,webgl-container_page14_4,height_page14_4,my_waist_reading_page14_4,my_waist_page14_4
-page14_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2021205a_copied.obj,webgl-container_page14_5,height_page14_5,my_waist_reading_page14_5,my_waist_page14_5
-page15_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2021101_copied.obj,webgl-container_page15_0,height_page15_0,my_waist_reading_page15_0,my_waist_page15_0
-page15_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4776_copied.obj,webgl-container_page15_1,height_page15_1,my_waist_reading_page15_1,my_waist_page15_1
-page15_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4088_copied.obj,webgl-container_page15_2,height_page15_2,my_waist_reading_page15_2,my_waist_page15_2
-page15_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0509045a_copied.obj,webgl-container_page15_3,height_page15_3,my_waist_reading_page15_3,my_waist_page15_3
-page15_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3262_copied.obj,webgl-container_page15_4,height_page15_4,my_waist_reading_page15_4,my_waist_page15_4
-page15_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500735_copied.obj,webgl-container_page15_5,height_page15_5,my_waist_reading_page15_5,my_waist_page15_5
-page16_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4309_copied.obj,webgl-container_page16_0,height_page16_0,my_waist_reading_page16_0,my_waist_page16_0
-page16_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5318_copied.obj,webgl-container_page16_1,height_page16_1,my_waist_reading_page16_1,my_waist_page16_1
-page16_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/1151_copied.obj,webgl-container_page16_2,height_page16_2,my_waist_reading_page16_2,my_waist_page16_2
-page16_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/1236_copied.obj,webgl-container_page16_3,height_page16_3,my_waist_reading_page16_3,my_waist_page16_3
-page16_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507221_copied.obj,webgl-container_page16_4,height_page16_4,my_waist_reading_page16_4,my_waist_page16_4
-page16_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5140_copied.obj,webgl-container_page16_5,height_page16_5,my_waist_reading_page16_5,my_waist_page16_5
-page17_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500281a_copied.obj,webgl-container_page17_0,height_page17_0,my_waist_reading_page17_0,my_waist_page17_0
-page17_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3012a_copied.obj,webgl-container_page17_1,height_page17_1,my_waist_reading_page17_1,my_waist_page17_1
-page17_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/1388_copied.obj,webgl-container_page17_2,height_page17_2,my_waist_reading_page17_2,my_waist_page17_2
-page17_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5119_copied.obj,webgl-container_page17_3,height_page17_3,my_waist_reading_page17_3,my_waist_page17_3
-page17_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3615_copied.obj,webgl-container_page17_4,height_page17_4,my_waist_reading_page17_4,my_waist_page17_4
-page17_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0509456_copied.obj,webgl-container_page17_5,height_page17_5,my_waist_reading_page17_5,my_waist_page17_5
-page18_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502786_copied.obj,webgl-container_page18_0,height_page18_0,my_waist_reading_page18_0,my_waist_page18_0
-page18_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502947_copied.obj,webgl-container_page18_1,height_page18_1,my_waist_reading_page18_1,my_waist_page18_1
-page18_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2772_copied.obj,webgl-container_page18_2,height_page18_2,my_waist_reading_page18_2,my_waist_page18_2
-page18_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2039_copied.obj,webgl-container_page18_3,height_page18_3,my_waist_reading_page18_3,my_waist_page18_3
-page18_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504896_copied.obj,webgl-container_page18_4,height_page18_4,my_waist_reading_page18_4,my_waist_page18_4
-page18_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506011_copied.obj,webgl-container_page18_5,height_page18_5,my_waist_reading_page18_5,my_waist_page18_5
-page19_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2528_copied.obj,webgl-container_page19_0,height_page19_0,my_waist_reading_page19_0,my_waist_page19_0
-page19_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506623_copied.obj,webgl-container_page19_1,height_page19_1,my_waist_reading_page19_1,my_waist_page19_1
-page19_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4360_copied.obj,webgl-container_page19_2,height_page19_2,my_waist_reading_page19_2,my_waist_page19_2
-page19_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2258_copied.obj,webgl-container_page19_3,height_page19_3,my_waist_reading_page19_3,my_waist_page19_3
-page19_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506519_copied.obj,webgl-container_page19_4,height_page19_4,my_waist_reading_page19_4,my_waist_page19_4
-page19_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507958_copied.obj,webgl-container_page19_5,height_page19_5,my_waist_reading_page19_5,my_waist_page19_5
-page20_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2021264a_copied.obj,webgl-container_page20_0,height_page20_0,my_waist_reading_page20_0,my_waist_page20_0
-page20_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0505814a_copied.obj,webgl-container_page20_1,height_page20_1,my_waist_reading_page20_1,my_waist_page20_1
-page20_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3483_copied.obj,webgl-container_page20_2,height_page20_2,my_waist_reading_page20_2,my_waist_page20_2
-page20_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507275_copied.obj,webgl-container_page20_3,height_page20_3,my_waist_reading_page20_3,my_waist_page20_3
-page20_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2851_copied.obj,webgl-container_page20_4,height_page20_4,my_waist_reading_page20_4,my_waist_page20_4
-page20_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0501566_copied.obj,webgl-container_page20_5,height_page20_5,my_waist_reading_page20_5,my_waist_page20_5
-page21_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506257_copied.obj,webgl-container_page21_0,height_page21_0,my_waist_reading_page21_0,my_waist_page21_0
-page21_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3857_copied.obj,webgl-container_page21_1,height_page21_1,my_waist_reading_page21_1,my_waist_page21_1
-page21_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0509037a_copied.obj,webgl-container_page21_2,height_page21_2,my_waist_reading_page21_2,my_waist_page21_2
-page21_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2276_copied.obj,webgl-container_page21_3,height_page21_3,my_waist_reading_page21_3,my_waist_page21_3
-page21_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4827_copied.obj,webgl-container_page21_4,height_page21_4,my_waist_reading_page21_4,my_waist_page21_4
-page21_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502886_copied.obj,webgl-container_page21_5,height_page21_5,my_waist_reading_page21_5,my_waist_page21_5
-page22_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2247_copied.obj,webgl-container_page22_0,height_page22_0,my_waist_reading_page22_0,my_waist_page22_0
-page22_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2308_copied.obj,webgl-container_page22_1,height_page22_1,my_waist_reading_page22_1,my_waist_page22_1
-page22_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2317_copied.obj,webgl-container_page22_2,height_page22_2,my_waist_reading_page22_2,my_waist_page22_2
-page22_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2021283_copied.obj,webgl-container_page22_3,height_page22_3,my_waist_reading_page22_3,my_waist_page22_3
-page22_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500873a_copied.obj,webgl-container_page22_4,height_page22_4,my_waist_reading_page22_4,my_waist_page22_4
-page22_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500853_copied.obj,webgl-container_page22_5,height_page22_5,my_waist_reading_page22_5,my_waist_page22_5
-page23_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5385_copied.obj,webgl-container_page23_0,height_page23_0,my_waist_reading_page23_0,my_waist_page23_0
-page23_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500278_copied.obj,webgl-container_page23_1,height_page23_1,my_waist_reading_page23_1,my_waist_page23_1
-page23_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/1247_copied.obj,webgl-container_page23_2,height_page23_2,my_waist_reading_page23_2,my_waist_page23_2
-page23_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506517_copied.obj,webgl-container_page23_3,height_page23_3,my_waist_reading_page23_3,my_waist_page23_3
-page23_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507648a_copied.obj,webgl-container_page23_4,height_page23_4,my_waist_reading_page23_4,my_waist_page23_4
-page23_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504630_copied.obj,webgl-container_page23_5,height_page23_5,my_waist_reading_page23_5,my_waist_page23_5
-page24_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0509437_copied.obj,webgl-container_page24_0,height_page24_0,my_waist_reading_page24_0,my_waist_page24_0
-page24_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507665_copied.obj,webgl-container_page24_1,height_page24_1,my_waist_reading_page24_1,my_waist_page24_1
-page24_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4395_copied.obj,webgl-container_page24_2,height_page24_2,my_waist_reading_page24_2,my_waist_page24_2
-page24_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500778_copied.obj,webgl-container_page24_3,height_page24_3,my_waist_reading_page24_3,my_waist_page24_3
-page24_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5241a_copied.obj,webgl-container_page24_4,height_page24_4,my_waist_reading_page24_4,my_waist_page24_4
-page24_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504048_copied.obj,webgl-container_page24_5,height_page24_5,my_waist_reading_page24_5,my_waist_page24_5
+label,obj_path,webgl-container_id,height_id,my_waist_reading_id,my_waist_id,qualtrics
+page1_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506425_copied.obj,webgl-container_page1_0,height_page1_0,my_waist_reading_page1_0,my_waist_page1_0,"var my_waist_page1_0 = document.getElementById(""my_waist_page1_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page1_0"", my_waist_page1_0);"
+page1_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506371_copied.obj,webgl-container_page1_1,height_page1_1,my_waist_reading_page1_1,my_waist_page1_1,"var my_waist_page1_1 = document.getElementById(""my_waist_page1_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page1_1"", my_waist_page1_0);"
+page1_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2021477a_copied.obj,webgl-container_page1_2,height_page1_2,my_waist_reading_page1_2,my_waist_page1_2,"var my_waist_page1_2 = document.getElementById(""my_waist_page1_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page1_2"", my_waist_page1_0);"
+page1_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2021174_copied.obj,webgl-container_page1_3,height_page1_3,my_waist_reading_page1_3,my_waist_page1_3,"var my_waist_page1_3 = document.getElementById(""my_waist_page1_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page1_3"", my_waist_page1_0);"
+page1_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0505950_copied.obj,webgl-container_page1_4,height_page1_4,my_waist_reading_page1_4,my_waist_page1_4,"var my_waist_page1_4 = document.getElementById(""my_waist_page1_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page1_4"", my_waist_page1_0);"
+page1_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506898_copied.obj,webgl-container_page1_5,height_page1_5,my_waist_reading_page1_5,my_waist_page1_5,"var my_waist_page1_5 = document.getElementById(""my_waist_page1_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page1_5"", my_waist_page1_0);"
+page2_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4400a_copied.obj,webgl-container_page2_0,height_page2_0,my_waist_reading_page2_0,my_waist_page2_0,"var my_waist_page2_0 = document.getElementById(""my_waist_page2_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page2_0"", my_waist_page1_0);"
+page2_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506069_copied.obj,webgl-container_page2_1,height_page2_1,my_waist_reading_page2_1,my_waist_page2_1,"var my_waist_page2_1 = document.getElementById(""my_waist_page2_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page2_1"", my_waist_page1_0);"
+page2_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500036_copied.obj,webgl-container_page2_2,height_page2_2,my_waist_reading_page2_2,my_waist_page2_2,"var my_waist_page2_2 = document.getElementById(""my_waist_page2_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page2_2"", my_waist_page1_0);"
+page2_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507475_copied.obj,webgl-container_page2_3,height_page2_3,my_waist_reading_page2_3,my_waist_page2_3,"var my_waist_page2_3 = document.getElementById(""my_waist_page2_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page2_3"", my_waist_page1_0);"
+page2_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/1252_copied.obj,webgl-container_page2_4,height_page2_4,my_waist_reading_page2_4,my_waist_page2_4,"var my_waist_page2_4 = document.getElementById(""my_waist_page2_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page2_4"", my_waist_page1_0);"
+page2_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2021010_copied.obj,webgl-container_page2_5,height_page2_5,my_waist_reading_page2_5,my_waist_page2_5,"var my_waist_page2_5 = document.getElementById(""my_waist_page2_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page2_5"", my_waist_page1_0);"
+page3_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507767_copied.obj,webgl-container_page3_0,height_page3_0,my_waist_reading_page3_0,my_waist_page3_0,"var my_waist_page3_0 = document.getElementById(""my_waist_page3_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page3_0"", my_waist_page1_0);"
+page3_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4454_copied.obj,webgl-container_page3_1,height_page3_1,my_waist_reading_page3_1,my_waist_page3_1,"var my_waist_page3_1 = document.getElementById(""my_waist_page3_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page3_1"", my_waist_page1_0);"
+page3_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504240_copied.obj,webgl-container_page3_2,height_page3_2,my_waist_reading_page3_2,my_waist_page3_2,"var my_waist_page3_2 = document.getElementById(""my_waist_page3_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page3_2"", my_waist_page1_0);"
+page3_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/1325_copied.obj,webgl-container_page3_3,height_page3_3,my_waist_reading_page3_3,my_waist_page3_3,"var my_waist_page3_3 = document.getElementById(""my_waist_page3_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page3_3"", my_waist_page1_0);"
+page3_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504160_copied.obj,webgl-container_page3_4,height_page3_4,my_waist_reading_page3_4,my_waist_page3_4,"var my_waist_page3_4 = document.getElementById(""my_waist_page3_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page3_4"", my_waist_page1_0);"
+page3_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500829a_copied.obj,webgl-container_page3_5,height_page3_5,my_waist_reading_page3_5,my_waist_page3_5,"var my_waist_page3_5 = document.getElementById(""my_waist_page3_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page3_5"", my_waist_page1_0);"
+page4_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4314a_copied.obj,webgl-container_page4_0,height_page4_0,my_waist_reading_page4_0,my_waist_page4_0,"var my_waist_page4_0 = document.getElementById(""my_waist_page4_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page4_0"", my_waist_page1_0);"
+page4_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502574_copied.obj,webgl-container_page4_1,height_page4_1,my_waist_reading_page4_1,my_waist_page4_1,"var my_waist_page4_1 = document.getElementById(""my_waist_page4_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page4_1"", my_waist_page1_0);"
+page4_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506651_copied.obj,webgl-container_page4_2,height_page4_2,my_waist_reading_page4_2,my_waist_page4_2,"var my_waist_page4_2 = document.getElementById(""my_waist_page4_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page4_2"", my_waist_page1_0);"
+page4_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2496_copied.obj,webgl-container_page4_3,height_page4_3,my_waist_reading_page4_3,my_waist_page4_3,"var my_waist_page4_3 = document.getElementById(""my_waist_page4_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page4_3"", my_waist_page1_0);"
+page4_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4614_copied.obj,webgl-container_page4_4,height_page4_4,my_waist_reading_page4_4,my_waist_page4_4,"var my_waist_page4_4 = document.getElementById(""my_waist_page4_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page4_4"", my_waist_page1_0);"
+page4_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502985_copied.obj,webgl-container_page4_5,height_page4_5,my_waist_reading_page4_5,my_waist_page4_5,"var my_waist_page4_5 = document.getElementById(""my_waist_page4_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page4_5"", my_waist_page1_0);"
+page5_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2269_copied.obj,webgl-container_page5_0,height_page5_0,my_waist_reading_page5_0,my_waist_page5_0,"var my_waist_page5_0 = document.getElementById(""my_waist_page5_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page5_0"", my_waist_page1_0);"
+page5_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500289_copied.obj,webgl-container_page5_1,height_page5_1,my_waist_reading_page5_1,my_waist_page5_1,"var my_waist_page5_1 = document.getElementById(""my_waist_page5_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page5_1"", my_waist_page1_0);"
+page5_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504592_copied.obj,webgl-container_page5_2,height_page5_2,my_waist_reading_page5_2,my_waist_page5_2,"var my_waist_page5_2 = document.getElementById(""my_waist_page5_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page5_2"", my_waist_page1_0);"
+page5_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507446_copied.obj,webgl-container_page5_3,height_page5_3,my_waist_reading_page5_3,my_waist_page5_3,"var my_waist_page5_3 = document.getElementById(""my_waist_page5_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page5_3"", my_waist_page1_0);"
+page5_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0505488_copied.obj,webgl-container_page5_4,height_page5_4,my_waist_reading_page5_4,my_waist_page5_4,"var my_waist_page5_4 = document.getElementById(""my_waist_page5_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page5_4"", my_waist_page1_0);"
+page5_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0508142_copied.obj,webgl-container_page5_5,height_page5_5,my_waist_reading_page5_5,my_waist_page5_5,"var my_waist_page5_5 = document.getElementById(""my_waist_page5_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page5_5"", my_waist_page1_0);"
+page6_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5482_copied.obj,webgl-container_page6_0,height_page6_0,my_waist_reading_page6_0,my_waist_page6_0,"var my_waist_page6_0 = document.getElementById(""my_waist_page6_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page6_0"", my_waist_page1_0);"
+page6_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504202_copied.obj,webgl-container_page6_1,height_page6_1,my_waist_reading_page6_1,my_waist_page6_1,"var my_waist_page6_1 = document.getElementById(""my_waist_page6_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page6_1"", my_waist_page1_0);"
+page6_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2021206_copied.obj,webgl-container_page6_2,height_page6_2,my_waist_reading_page6_2,my_waist_page6_2,"var my_waist_page6_2 = document.getElementById(""my_waist_page6_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page6_2"", my_waist_page1_0);"
+page6_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502914_copied.obj,webgl-container_page6_3,height_page6_3,my_waist_reading_page6_3,my_waist_page6_3,"var my_waist_page6_3 = document.getElementById(""my_waist_page6_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page6_3"", my_waist_page1_0);"
+page6_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3787a_copied.obj,webgl-container_page6_4,height_page6_4,my_waist_reading_page6_4,my_waist_page6_4,"var my_waist_page6_4 = document.getElementById(""my_waist_page6_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page6_4"", my_waist_page1_0);"
+page6_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4076_copied.obj,webgl-container_page6_5,height_page6_5,my_waist_reading_page6_5,my_waist_page6_5,"var my_waist_page6_5 = document.getElementById(""my_waist_page6_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page6_5"", my_waist_page1_0);"
+page7_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504158_copied.obj,webgl-container_page7_0,height_page7_0,my_waist_reading_page7_0,my_waist_page7_0,"var my_waist_page7_0 = document.getElementById(""my_waist_page7_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page7_0"", my_waist_page1_0);"
+page7_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500491a_copied.obj,webgl-container_page7_1,height_page7_1,my_waist_reading_page7_1,my_waist_page7_1,"var my_waist_page7_1 = document.getElementById(""my_waist_page7_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page7_1"", my_waist_page1_0);"
+page7_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506589_copied.obj,webgl-container_page7_2,height_page7_2,my_waist_reading_page7_2,my_waist_page7_2,"var my_waist_page7_2 = document.getElementById(""my_waist_page7_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page7_2"", my_waist_page1_0);"
+page7_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504951_copied.obj,webgl-container_page7_3,height_page7_3,my_waist_reading_page7_3,my_waist_page7_3,"var my_waist_page7_3 = document.getElementById(""my_waist_page7_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page7_3"", my_waist_page1_0);"
+page7_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0505441_copied.obj,webgl-container_page7_4,height_page7_4,my_waist_reading_page7_4,my_waist_page7_4,"var my_waist_page7_4 = document.getElementById(""my_waist_page7_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page7_4"", my_waist_page1_0);"
+page7_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504423_copied.obj,webgl-container_page7_5,height_page7_5,my_waist_reading_page7_5,my_waist_page7_5,"var my_waist_page7_5 = document.getElementById(""my_waist_page7_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page7_5"", my_waist_page1_0);"
+page8_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5339_copied.obj,webgl-container_page8_0,height_page8_0,my_waist_reading_page8_0,my_waist_page8_0,"var my_waist_page8_0 = document.getElementById(""my_waist_page8_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page8_0"", my_waist_page1_0);"
+page8_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2804_copied.obj,webgl-container_page8_1,height_page8_1,my_waist_reading_page8_1,my_waist_page8_1,"var my_waist_page8_1 = document.getElementById(""my_waist_page8_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page8_1"", my_waist_page1_0);"
+page8_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2569_copied.obj,webgl-container_page8_2,height_page8_2,my_waist_reading_page8_2,my_waist_page8_2,"var my_waist_page8_2 = document.getElementById(""my_waist_page8_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page8_2"", my_waist_page1_0);"
+page8_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502934_copied.obj,webgl-container_page8_3,height_page8_3,my_waist_reading_page8_3,my_waist_page8_3,"var my_waist_page8_3 = document.getElementById(""my_waist_page8_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page8_3"", my_waist_page1_0);"
+page8_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507107_copied.obj,webgl-container_page8_4,height_page8_4,my_waist_reading_page8_4,my_waist_page8_4,"var my_waist_page8_4 = document.getElementById(""my_waist_page8_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page8_4"", my_waist_page1_0);"
+page8_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504572_copied.obj,webgl-container_page8_5,height_page8_5,my_waist_reading_page8_5,my_waist_page8_5,"var my_waist_page8_5 = document.getElementById(""my_waist_page8_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page8_5"", my_waist_page1_0);"
+page9_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0505031_copied.obj,webgl-container_page9_0,height_page9_0,my_waist_reading_page9_0,my_waist_page9_0,"var my_waist_page9_0 = document.getElementById(""my_waist_page9_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page9_0"", my_waist_page1_0);"
+page9_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4807_copied.obj,webgl-container_page9_1,height_page9_1,my_waist_reading_page9_1,my_waist_page9_1,"var my_waist_page9_1 = document.getElementById(""my_waist_page9_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page9_1"", my_waist_page1_0);"
+page9_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507878_copied.obj,webgl-container_page9_2,height_page9_2,my_waist_reading_page9_2,my_waist_page9_2,"var my_waist_page9_2 = document.getElementById(""my_waist_page9_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page9_2"", my_waist_page1_0);"
+page9_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502643_copied.obj,webgl-container_page9_3,height_page9_3,my_waist_reading_page9_3,my_waist_page9_3,"var my_waist_page9_3 = document.getElementById(""my_waist_page9_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page9_3"", my_waist_page1_0);"
+page9_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507769_copied.obj,webgl-container_page9_4,height_page9_4,my_waist_reading_page9_4,my_waist_page9_4,"var my_waist_page9_4 = document.getElementById(""my_waist_page9_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page9_4"", my_waist_page1_0);"
+page9_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504948_copied.obj,webgl-container_page9_5,height_page9_5,my_waist_reading_page9_5,my_waist_page9_5,"var my_waist_page9_5 = document.getElementById(""my_waist_page9_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page9_5"", my_waist_page1_0);"
+page10_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507096a_copied.obj,webgl-container_page10_0,height_page10_0,my_waist_reading_page10_0,my_waist_page10_0,"var my_waist_page10_0 = document.getElementById(""my_waist_page10_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page10_0"", my_waist_page1_0);"
+page10_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502743_copied.obj,webgl-container_page10_1,height_page10_1,my_waist_reading_page10_1,my_waist_page10_1,"var my_waist_page10_1 = document.getElementById(""my_waist_page10_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page10_1"", my_waist_page1_0);"
+page10_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3609_copied.obj,webgl-container_page10_2,height_page10_2,my_waist_reading_page10_2,my_waist_page10_2,"var my_waist_page10_2 = document.getElementById(""my_waist_page10_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page10_2"", my_waist_page1_0);"
+page10_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2867_copied.obj,webgl-container_page10_3,height_page10_3,my_waist_reading_page10_3,my_waist_page10_3,"var my_waist_page10_3 = document.getElementById(""my_waist_page10_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page10_3"", my_waist_page1_0);"
+page10_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2213a_copied.obj,webgl-container_page10_4,height_page10_4,my_waist_reading_page10_4,my_waist_page10_4,"var my_waist_page10_4 = document.getElementById(""my_waist_page10_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page10_4"", my_waist_page1_0);"
+page10_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507891_copied.obj,webgl-container_page10_5,height_page10_5,my_waist_reading_page10_5,my_waist_page10_5,"var my_waist_page10_5 = document.getElementById(""my_waist_page10_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page10_5"", my_waist_page1_0);"
+page11_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0509332_copied.obj,webgl-container_page11_0,height_page11_0,my_waist_reading_page11_0,my_waist_page11_0,"var my_waist_page11_0 = document.getElementById(""my_waist_page11_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page11_0"", my_waist_page1_0);"
+page11_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3590_copied.obj,webgl-container_page11_1,height_page11_1,my_waist_reading_page11_1,my_waist_page11_1,"var my_waist_page11_1 = document.getElementById(""my_waist_page11_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page11_1"", my_waist_page1_0);"
+page11_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5521_copied.obj,webgl-container_page11_2,height_page11_2,my_waist_reading_page11_2,my_waist_page11_2,"var my_waist_page11_2 = document.getElementById(""my_waist_page11_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page11_2"", my_waist_page1_0);"
+page11_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504916_copied.obj,webgl-container_page11_3,height_page11_3,my_waist_reading_page11_3,my_waist_page11_3,"var my_waist_page11_3 = document.getElementById(""my_waist_page11_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page11_3"", my_waist_page1_0);"
+page11_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/1449_copied.obj,webgl-container_page11_4,height_page11_4,my_waist_reading_page11_4,my_waist_page11_4,"var my_waist_page11_4 = document.getElementById(""my_waist_page11_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page11_4"", my_waist_page1_0);"
+page11_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500788_copied.obj,webgl-container_page11_5,height_page11_5,my_waist_reading_page11_5,my_waist_page11_5,"var my_waist_page11_5 = document.getElementById(""my_waist_page11_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page11_5"", my_waist_page1_0);"
+page12_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2463_copied.obj,webgl-container_page12_0,height_page12_0,my_waist_reading_page12_0,my_waist_page12_0,"var my_waist_page12_0 = document.getElementById(""my_waist_page12_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page12_0"", my_waist_page1_0);"
+page12_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5390_copied.obj,webgl-container_page12_1,height_page12_1,my_waist_reading_page12_1,my_waist_page12_1,"var my_waist_page12_1 = document.getElementById(""my_waist_page12_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page12_1"", my_waist_page1_0);"
+page12_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500292_copied.obj,webgl-container_page12_2,height_page12_2,my_waist_reading_page12_2,my_waist_page12_2,"var my_waist_page12_2 = document.getElementById(""my_waist_page12_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page12_2"", my_waist_page1_0);"
+page12_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506356_copied.obj,webgl-container_page12_3,height_page12_3,my_waist_reading_page12_3,my_waist_page12_3,"var my_waist_page12_3 = document.getElementById(""my_waist_page12_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page12_3"", my_waist_page1_0);"
+page12_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504809_copied.obj,webgl-container_page12_4,height_page12_4,my_waist_reading_page12_4,my_waist_page12_4,"var my_waist_page12_4 = document.getElementById(""my_waist_page12_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page12_4"", my_waist_page1_0);"
+page12_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507853_copied.obj,webgl-container_page12_5,height_page12_5,my_waist_reading_page12_5,my_waist_page12_5,"var my_waist_page12_5 = document.getElementById(""my_waist_page12_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page12_5"", my_waist_page1_0);"
+page13_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507485_copied.obj,webgl-container_page13_0,height_page13_0,my_waist_reading_page13_0,my_waist_page13_0,"var my_waist_page13_0 = document.getElementById(""my_waist_page13_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page13_0"", my_waist_page1_0);"
+page13_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5064_copied.obj,webgl-container_page13_1,height_page13_1,my_waist_reading_page13_1,my_waist_page13_1,"var my_waist_page13_1 = document.getElementById(""my_waist_page13_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page13_1"", my_waist_page1_0);"
+page13_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502829_copied.obj,webgl-container_page13_2,height_page13_2,my_waist_reading_page13_2,my_waist_page13_2,"var my_waist_page13_2 = document.getElementById(""my_waist_page13_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page13_2"", my_waist_page1_0);"
+page13_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0505333_copied.obj,webgl-container_page13_3,height_page13_3,my_waist_reading_page13_3,my_waist_page13_3,"var my_waist_page13_3 = document.getElementById(""my_waist_page13_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page13_3"", my_waist_page1_0);"
+page13_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5387a_copied.obj,webgl-container_page13_4,height_page13_4,my_waist_reading_page13_4,my_waist_page13_4,"var my_waist_page13_4 = document.getElementById(""my_waist_page13_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page13_4"", my_waist_page1_0);"
+page13_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2517_copied.obj,webgl-container_page13_5,height_page13_5,my_waist_reading_page13_5,my_waist_page13_5,"var my_waist_page13_5 = document.getElementById(""my_waist_page13_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page13_5"", my_waist_page1_0);"
+page14_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0509048_copied.obj,webgl-container_page14_0,height_page14_0,my_waist_reading_page14_0,my_waist_page14_0,"var my_waist_page14_0 = document.getElementById(""my_waist_page14_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page14_0"", my_waist_page1_0);"
+page14_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2023_copied.obj,webgl-container_page14_1,height_page14_1,my_waist_reading_page14_1,my_waist_page14_1,"var my_waist_page14_1 = document.getElementById(""my_waist_page14_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page14_1"", my_waist_page1_0);"
+page14_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504411_copied.obj,webgl-container_page14_2,height_page14_2,my_waist_reading_page14_2,my_waist_page14_2,"var my_waist_page14_2 = document.getElementById(""my_waist_page14_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page14_2"", my_waist_page1_0);"
+page14_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3786_copied.obj,webgl-container_page14_3,height_page14_3,my_waist_reading_page14_3,my_waist_page14_3,"var my_waist_page14_3 = document.getElementById(""my_waist_page14_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page14_3"", my_waist_page1_0);"
+page14_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506115a_copied.obj,webgl-container_page14_4,height_page14_4,my_waist_reading_page14_4,my_waist_page14_4,"var my_waist_page14_4 = document.getElementById(""my_waist_page14_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page14_4"", my_waist_page1_0);"
+page14_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2021205a_copied.obj,webgl-container_page14_5,height_page14_5,my_waist_reading_page14_5,my_waist_page14_5,"var my_waist_page14_5 = document.getElementById(""my_waist_page14_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page14_5"", my_waist_page1_0);"
+page15_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2021101_copied.obj,webgl-container_page15_0,height_page15_0,my_waist_reading_page15_0,my_waist_page15_0,"var my_waist_page15_0 = document.getElementById(""my_waist_page15_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page15_0"", my_waist_page1_0);"
+page15_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4776_copied.obj,webgl-container_page15_1,height_page15_1,my_waist_reading_page15_1,my_waist_page15_1,"var my_waist_page15_1 = document.getElementById(""my_waist_page15_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page15_1"", my_waist_page1_0);"
+page15_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4088_copied.obj,webgl-container_page15_2,height_page15_2,my_waist_reading_page15_2,my_waist_page15_2,"var my_waist_page15_2 = document.getElementById(""my_waist_page15_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page15_2"", my_waist_page1_0);"
+page15_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0509045a_copied.obj,webgl-container_page15_3,height_page15_3,my_waist_reading_page15_3,my_waist_page15_3,"var my_waist_page15_3 = document.getElementById(""my_waist_page15_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page15_3"", my_waist_page1_0);"
+page15_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3262_copied.obj,webgl-container_page15_4,height_page15_4,my_waist_reading_page15_4,my_waist_page15_4,"var my_waist_page15_4 = document.getElementById(""my_waist_page15_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page15_4"", my_waist_page1_0);"
+page15_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500735_copied.obj,webgl-container_page15_5,height_page15_5,my_waist_reading_page15_5,my_waist_page15_5,"var my_waist_page15_5 = document.getElementById(""my_waist_page15_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page15_5"", my_waist_page1_0);"
+page16_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4309_copied.obj,webgl-container_page16_0,height_page16_0,my_waist_reading_page16_0,my_waist_page16_0,"var my_waist_page16_0 = document.getElementById(""my_waist_page16_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page16_0"", my_waist_page1_0);"
+page16_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5318_copied.obj,webgl-container_page16_1,height_page16_1,my_waist_reading_page16_1,my_waist_page16_1,"var my_waist_page16_1 = document.getElementById(""my_waist_page16_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page16_1"", my_waist_page1_0);"
+page16_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/1151_copied.obj,webgl-container_page16_2,height_page16_2,my_waist_reading_page16_2,my_waist_page16_2,"var my_waist_page16_2 = document.getElementById(""my_waist_page16_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page16_2"", my_waist_page1_0);"
+page16_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/1236_copied.obj,webgl-container_page16_3,height_page16_3,my_waist_reading_page16_3,my_waist_page16_3,"var my_waist_page16_3 = document.getElementById(""my_waist_page16_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page16_3"", my_waist_page1_0);"
+page16_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507221_copied.obj,webgl-container_page16_4,height_page16_4,my_waist_reading_page16_4,my_waist_page16_4,"var my_waist_page16_4 = document.getElementById(""my_waist_page16_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page16_4"", my_waist_page1_0);"
+page16_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5140_copied.obj,webgl-container_page16_5,height_page16_5,my_waist_reading_page16_5,my_waist_page16_5,"var my_waist_page16_5 = document.getElementById(""my_waist_page16_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page16_5"", my_waist_page1_0);"
+page17_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500281a_copied.obj,webgl-container_page17_0,height_page17_0,my_waist_reading_page17_0,my_waist_page17_0,"var my_waist_page17_0 = document.getElementById(""my_waist_page17_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page17_0"", my_waist_page1_0);"
+page17_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3012a_copied.obj,webgl-container_page17_1,height_page17_1,my_waist_reading_page17_1,my_waist_page17_1,"var my_waist_page17_1 = document.getElementById(""my_waist_page17_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page17_1"", my_waist_page1_0);"
+page17_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/1388_copied.obj,webgl-container_page17_2,height_page17_2,my_waist_reading_page17_2,my_waist_page17_2,"var my_waist_page17_2 = document.getElementById(""my_waist_page17_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page17_2"", my_waist_page1_0);"
+page17_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5119_copied.obj,webgl-container_page17_3,height_page17_3,my_waist_reading_page17_3,my_waist_page17_3,"var my_waist_page17_3 = document.getElementById(""my_waist_page17_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page17_3"", my_waist_page1_0);"
+page17_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3615_copied.obj,webgl-container_page17_4,height_page17_4,my_waist_reading_page17_4,my_waist_page17_4,"var my_waist_page17_4 = document.getElementById(""my_waist_page17_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page17_4"", my_waist_page1_0);"
+page17_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0509456_copied.obj,webgl-container_page17_5,height_page17_5,my_waist_reading_page17_5,my_waist_page17_5,"var my_waist_page17_5 = document.getElementById(""my_waist_page17_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page17_5"", my_waist_page1_0);"
+page18_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502786_copied.obj,webgl-container_page18_0,height_page18_0,my_waist_reading_page18_0,my_waist_page18_0,"var my_waist_page18_0 = document.getElementById(""my_waist_page18_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page18_0"", my_waist_page1_0);"
+page18_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502947_copied.obj,webgl-container_page18_1,height_page18_1,my_waist_reading_page18_1,my_waist_page18_1,"var my_waist_page18_1 = document.getElementById(""my_waist_page18_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page18_1"", my_waist_page1_0);"
+page18_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2772_copied.obj,webgl-container_page18_2,height_page18_2,my_waist_reading_page18_2,my_waist_page18_2,"var my_waist_page18_2 = document.getElementById(""my_waist_page18_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page18_2"", my_waist_page1_0);"
+page18_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2039_copied.obj,webgl-container_page18_3,height_page18_3,my_waist_reading_page18_3,my_waist_page18_3,"var my_waist_page18_3 = document.getElementById(""my_waist_page18_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page18_3"", my_waist_page1_0);"
+page18_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504896_copied.obj,webgl-container_page18_4,height_page18_4,my_waist_reading_page18_4,my_waist_page18_4,"var my_waist_page18_4 = document.getElementById(""my_waist_page18_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page18_4"", my_waist_page1_0);"
+page18_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506011_copied.obj,webgl-container_page18_5,height_page18_5,my_waist_reading_page18_5,my_waist_page18_5,"var my_waist_page18_5 = document.getElementById(""my_waist_page18_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page18_5"", my_waist_page1_0);"
+page19_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2528_copied.obj,webgl-container_page19_0,height_page19_0,my_waist_reading_page19_0,my_waist_page19_0,"var my_waist_page19_0 = document.getElementById(""my_waist_page19_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page19_0"", my_waist_page1_0);"
+page19_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506623_copied.obj,webgl-container_page19_1,height_page19_1,my_waist_reading_page19_1,my_waist_page19_1,"var my_waist_page19_1 = document.getElementById(""my_waist_page19_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page19_1"", my_waist_page1_0);"
+page19_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4360_copied.obj,webgl-container_page19_2,height_page19_2,my_waist_reading_page19_2,my_waist_page19_2,"var my_waist_page19_2 = document.getElementById(""my_waist_page19_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page19_2"", my_waist_page1_0);"
+page19_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2258_copied.obj,webgl-container_page19_3,height_page19_3,my_waist_reading_page19_3,my_waist_page19_3,"var my_waist_page19_3 = document.getElementById(""my_waist_page19_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page19_3"", my_waist_page1_0);"
+page19_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506519_copied.obj,webgl-container_page19_4,height_page19_4,my_waist_reading_page19_4,my_waist_page19_4,"var my_waist_page19_4 = document.getElementById(""my_waist_page19_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page19_4"", my_waist_page1_0);"
+page19_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507958_copied.obj,webgl-container_page19_5,height_page19_5,my_waist_reading_page19_5,my_waist_page19_5,"var my_waist_page19_5 = document.getElementById(""my_waist_page19_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page19_5"", my_waist_page1_0);"
+page20_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2021264a_copied.obj,webgl-container_page20_0,height_page20_0,my_waist_reading_page20_0,my_waist_page20_0,"var my_waist_page20_0 = document.getElementById(""my_waist_page20_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page20_0"", my_waist_page1_0);"
+page20_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0505814a_copied.obj,webgl-container_page20_1,height_page20_1,my_waist_reading_page20_1,my_waist_page20_1,"var my_waist_page20_1 = document.getElementById(""my_waist_page20_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page20_1"", my_waist_page1_0);"
+page20_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3483_copied.obj,webgl-container_page20_2,height_page20_2,my_waist_reading_page20_2,my_waist_page20_2,"var my_waist_page20_2 = document.getElementById(""my_waist_page20_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page20_2"", my_waist_page1_0);"
+page20_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507275_copied.obj,webgl-container_page20_3,height_page20_3,my_waist_reading_page20_3,my_waist_page20_3,"var my_waist_page20_3 = document.getElementById(""my_waist_page20_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page20_3"", my_waist_page1_0);"
+page20_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2851_copied.obj,webgl-container_page20_4,height_page20_4,my_waist_reading_page20_4,my_waist_page20_4,"var my_waist_page20_4 = document.getElementById(""my_waist_page20_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page20_4"", my_waist_page1_0);"
+page20_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0501566_copied.obj,webgl-container_page20_5,height_page20_5,my_waist_reading_page20_5,my_waist_page20_5,"var my_waist_page20_5 = document.getElementById(""my_waist_page20_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page20_5"", my_waist_page1_0);"
+page21_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506257_copied.obj,webgl-container_page21_0,height_page21_0,my_waist_reading_page21_0,my_waist_page21_0,"var my_waist_page21_0 = document.getElementById(""my_waist_page21_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page21_0"", my_waist_page1_0);"
+page21_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/3857_copied.obj,webgl-container_page21_1,height_page21_1,my_waist_reading_page21_1,my_waist_page21_1,"var my_waist_page21_1 = document.getElementById(""my_waist_page21_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page21_1"", my_waist_page1_0);"
+page21_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0509037a_copied.obj,webgl-container_page21_2,height_page21_2,my_waist_reading_page21_2,my_waist_page21_2,"var my_waist_page21_2 = document.getElementById(""my_waist_page21_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page21_2"", my_waist_page1_0);"
+page21_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2276_copied.obj,webgl-container_page21_3,height_page21_3,my_waist_reading_page21_3,my_waist_page21_3,"var my_waist_page21_3 = document.getElementById(""my_waist_page21_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page21_3"", my_waist_page1_0);"
+page21_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4827_copied.obj,webgl-container_page21_4,height_page21_4,my_waist_reading_page21_4,my_waist_page21_4,"var my_waist_page21_4 = document.getElementById(""my_waist_page21_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page21_4"", my_waist_page1_0);"
+page21_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0502886_copied.obj,webgl-container_page21_5,height_page21_5,my_waist_reading_page21_5,my_waist_page21_5,"var my_waist_page21_5 = document.getElementById(""my_waist_page21_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page21_5"", my_waist_page1_0);"
+page22_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2247_copied.obj,webgl-container_page22_0,height_page22_0,my_waist_reading_page22_0,my_waist_page22_0,"var my_waist_page22_0 = document.getElementById(""my_waist_page22_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page22_0"", my_waist_page1_0);"
+page22_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2308_copied.obj,webgl-container_page22_1,height_page22_1,my_waist_reading_page22_1,my_waist_page22_1,"var my_waist_page22_1 = document.getElementById(""my_waist_page22_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page22_1"", my_waist_page1_0);"
+page22_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2317_copied.obj,webgl-container_page22_2,height_page22_2,my_waist_reading_page22_2,my_waist_page22_2,"var my_waist_page22_2 = document.getElementById(""my_waist_page22_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page22_2"", my_waist_page1_0);"
+page22_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/2021283_copied.obj,webgl-container_page22_3,height_page22_3,my_waist_reading_page22_3,my_waist_page22_3,"var my_waist_page22_3 = document.getElementById(""my_waist_page22_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page22_3"", my_waist_page1_0);"
+page22_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500873a_copied.obj,webgl-container_page22_4,height_page22_4,my_waist_reading_page22_4,my_waist_page22_4,"var my_waist_page22_4 = document.getElementById(""my_waist_page22_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page22_4"", my_waist_page1_0);"
+page22_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500853_copied.obj,webgl-container_page22_5,height_page22_5,my_waist_reading_page22_5,my_waist_page22_5,"var my_waist_page22_5 = document.getElementById(""my_waist_page22_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page22_5"", my_waist_page1_0);"
+page23_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5385_copied.obj,webgl-container_page23_0,height_page23_0,my_waist_reading_page23_0,my_waist_page23_0,"var my_waist_page23_0 = document.getElementById(""my_waist_page23_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page23_0"", my_waist_page1_0);"
+page23_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500278_copied.obj,webgl-container_page23_1,height_page23_1,my_waist_reading_page23_1,my_waist_page23_1,"var my_waist_page23_1 = document.getElementById(""my_waist_page23_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page23_1"", my_waist_page1_0);"
+page23_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/1247_copied.obj,webgl-container_page23_2,height_page23_2,my_waist_reading_page23_2,my_waist_page23_2,"var my_waist_page23_2 = document.getElementById(""my_waist_page23_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page23_2"", my_waist_page1_0);"
+page23_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0506517_copied.obj,webgl-container_page23_3,height_page23_3,my_waist_reading_page23_3,my_waist_page23_3,"var my_waist_page23_3 = document.getElementById(""my_waist_page23_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page23_3"", my_waist_page1_0);"
+page23_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507648a_copied.obj,webgl-container_page23_4,height_page23_4,my_waist_reading_page23_4,my_waist_page23_4,"var my_waist_page23_4 = document.getElementById(""my_waist_page23_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page23_4"", my_waist_page1_0);"
+page23_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504630_copied.obj,webgl-container_page23_5,height_page23_5,my_waist_reading_page23_5,my_waist_page23_5,"var my_waist_page23_5 = document.getElementById(""my_waist_page23_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page23_5"", my_waist_page1_0);"
+page24_0,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0509437_copied.obj,webgl-container_page24_0,height_page24_0,my_waist_reading_page24_0,my_waist_page24_0,"var my_waist_page24_0 = document.getElementById(""my_waist_page24_0"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page24_0"", my_waist_page1_0);"
+page24_1,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0507665_copied.obj,webgl-container_page24_1,height_page24_1,my_waist_reading_page24_1,my_waist_page24_1,"var my_waist_page24_1 = document.getElementById(""my_waist_page24_1"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page24_1"", my_waist_page1_0);"
+page24_2,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/4395_copied.obj,webgl-container_page24_2,height_page24_2,my_waist_reading_page24_2,my_waist_page24_2,"var my_waist_page24_2 = document.getElementById(""my_waist_page24_2"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page24_2"", my_waist_page1_0);"
+page24_3,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0500778_copied.obj,webgl-container_page24_3,height_page24_3,my_waist_reading_page24_3,my_waist_page24_3,"var my_waist_page24_3 = document.getElementById(""my_waist_page24_3"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page24_3"", my_waist_page1_0);"
+page24_4,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/5241a_copied.obj,webgl-container_page24_4,height_page24_4,my_waist_reading_page24_4,my_waist_page24_4,"var my_waist_page24_4 = document.getElementById(""my_waist_page24_4"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page24_4"", my_waist_page1_0);"
+page24_5,https://sxia2.github.io/waist_project/Program4/assets/objs_refined/0504048_copied.obj,webgl-container_page24_5,height_page24_5,my_waist_reading_page24_5,my_waist_page24_5,"var my_waist_page24_5 = document.getElementById(""my_waist_page24_5"").value
+Qualtrics.SurveyEngine.setEmbeddedData(""my_waist_page24_5"", my_waist_page1_0);"
