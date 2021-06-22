@@ -16,28 +16,14 @@
     <script src="https://sxia2.github.io/waist_project/Program4/d3.v3.min.js"></script>
 
     <style>
-        html,
-        body {
-            height: 100%;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-        }
-
-        input[type=text] {
-            background-color: #3CBC8D;
-            color: white;
+        tabletable {
+            table-layout: fixed;
         }
 
 
-        th {
-            border: 1px solid black;
-            word-wrap: break-word;
-        }
-
+        th,
         td {
             border: 1px solid black;
-            word-wrap: break-word;
         }
 
         .slidecontainer {
@@ -78,200 +64,180 @@
 </head>
 
 <body>
-    <div id="currentMonthTable">
-        <!-- <input id="clickMe" type="button" value="Previous Subject" onclick="reverse_table();" /> -->
-
-        <input id="clickMe" type="button" value="Next Subject" onclick="update_table();" />
-    </div>
-
+    <div id="currentMonthTable"></div>
     <!-- <p>this is a test</p> -->
 
     <script>
         // reference: http://jonathansoma.com/tutorials/d3/using-enter-and-append/
-
-        var current_subject_id = 0
+        var page = 'page1_'
         // var ojb_list = "./obj_list.csv"
         // var parameter_list = "./parameter_list.csv"
-        var camera, controls, renderer, container, scene
-
         ojb_list = "https://sxia2.github.io/waist_project/Program4/obj_list.csv"
         parameter_list = "https://sxia2.github.io/waist_project/Program4/parameter_list.csv"
-        var recorded_data = {}
-        function plot_tabel(ojb_list) {
-            var data = d3.text(ojb_list, function (data) {
-                // localStorage.clear();
-                // console.log(data)
-                var parsedCSV = d3.csv.parseRows(data);
-                // console.log(parsedCSV)
-                function filter_row(parsedCSV, id) {
-                    var parsedCSV_new = []
-                    for (i = 0; i < parsedCSV.length; i++) {
-                        // console.log(page + RegExp('.*'))
-                        // console.log(parsedCSV[i])
-                        if (parsedCSV[i][0] == String(id)) {
-                            parsedCSV_new.push(parsedCSV[i])
-                        }
-                    }
-                    // console.log(parsedCSV_new)
-                    return parsedCSV_new
-                }
-                // console.log(current_subject_id)
-                var parsedCSV_page = filter_row(parsedCSV, current_subject_id)
-                var container_table = d3.select("#currentMonthTable")
-                    .append("table");
-                var container_table_thread = container_table.append("thead").append("tr")
-                    .selectAll("th")
-                    .data(parsedCSV[0])
-                    .enter().append("th")
-                    .text(function (d) {
-                        return d;
-                    });
-
-                var container_table_tbody = container_table.append("tbody").selectAll("tr")
-                    .data(parsedCSV_page).enter()
-                    .append("tr")
-                    .selectAll("td")
-                    .data(function (d) {
-                        // console.log('d')
-                        // console.log(d)
-                        return d;
-                    }).enter()
-                    .append("td")
-
-                // add page and subject label
-                container_table_tbody.filter(function (d) {
-                    // console.log(d)
-                    return !d.includes(',');
-                }).append("p").attr('id', function (d) {
-
-                    return 'label';
-
-                })
-                    .text(function (d) { return 'ID = ' + d; })
-
-                container_table_tbody.filter(function (d) {
-                    // console.log(d)
-                    return d.split(', ')[0] == 'webgl-container';
-                }).attr('id', function (d) {
-                    // console.log(d)
-                    str_0 = d.split(', ')[0]
-                    str_1 = d.split(', ')[1].split('_')[1]
-                    // return str_0 + '_' + str_1;
-                    return str_0;
-
-                })
-
-                container_table_tbody.filter(function (d) {
-                    return d.split(', ')[0] == 'rec';
-                }).attr('id', function (d) {
-                    return 'rec';
-                }).text(function (d) { return 'Recorded: ' })
-                // .text("div")
-                container_table_div = container_table_tbody.filter(function (d) {
-
-                    return d.split(', ')[0] == 'div';
-                }).append("div").attr('class', "slidecontainer")
-                // container_table_div.append('input').attr('type', "range").attr('orient', "vertical").attr('id', function (d) { return 'my_waist' + '_' + d.split(', ')[1]; })
-                // container_table_div.append('p').text('Found waist location: ').append('span').attr('id', function (d) { return 'my_waist_reading' + '_' + d.split(', ')[1]; })
-
-                container_table_div.append('input').attr('type', "range").attr('orient', "vertical").attr('id', function (d) { return 'my_waist'; })
-                container_table_div.append('p').text('Found waist location: ').append('span').attr('id', function (d) { return 'my_waist_reading'; })
-
-                container_table_div.append('p').text("Subject's height in mm: ")
-                // container_table_div.append('p').attr('id', function (d) { return 'height' + '_' + d.split(', ')[1]; })
-                container_table_div.append('p').attr('id', function (d) { return 'height'; })
-
-
-            });
-
-
-
-        }
-        function plot_3d(parameter_list) {
-            var data = d3.csv(parameter_list, function (data) {
-                var children = document.body.childNodes;
-                var canvases = document.getElementsByTagName("canvas");
-
-                if (canvases != null && canvases.length != 0) {
-                    console.log('canvas detected....')
-                    for (var i = 0; i < data.length; i++) {
-                        if (data[i]['label'] == String(current_subject_id)) {
-                            var PATH_test = data[i]['obj_path']
-                            var ID_3D = 'webgl-container';
-                            var ID_HEIGHT = 'height'
-                            var ID_CONTROLER_READING = 'my_waist_reading'
-                            var ID_CONTROLER = 'my_waist'
-                            console.log(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER)
-                            render_obj(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER, update = true)
-                        }
-
-                    }
-
-                } else {
-                    for (var i = 0; i < data.length; i++) {
-                        if (data[i]['label'] == String(current_subject_id)) {
-                            var PATH_test = data[i]['obj_path']
-                            var ID_3D = 'webgl-container';
-                            var ID_HEIGHT = 'height'
-                            var ID_CONTROLER_READING = 'my_waist_reading'
-                            var ID_CONTROLER = 'my_waist'
-                            console.log(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER)
-                            render_obj(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER)
-                        }
-
+        var data = d3.text(ojb_list, function (data) {
+            localStorage.clear();
+            // console.log(data)
+            var parsedCSV = d3.csv.parseRows(data);
+            console.log(parsedCSV)
+            function filter_row(parsedCSV, page) {
+                var parsedCSV_new = []
+                for (i = 0; i < parsedCSV.length; i++) {
+                    // console.log(page + RegExp('.*'))
+                    if (parsedCSV[i][0].includes(page)) {
+                        parsedCSV_new.push(parsedCSV[i])
                     }
                 }
-
-            });
-        }
-        function update_table() {
-            if (current_subject_id < 144) {
-                current_subject_id = current_subject_id + 1
-                document.getElementById('label').innerHTML = 'ID = ' + String(current_subject_id)
-                recorded_data[String(current_subject_id)] = document.getElementById('my_waist_reading').textContent;
-                document.getElementById('rec').innerHTML = 'Recorded: ' + JSON.stringify(recorded_data).split(',').join(', ')
-                plot_3d(parameter_list)
-            } else {
-                var x = document.getElementById('clickMe');
-                var xy = document.getElementById('webgl-container');
-                x.style.display = "none";
-                y.style.display = "none";
+                console.log(parsedCSV_new)
+                return parsedCSV_new
             }
 
-        }
-        function reverse_table() {
-            if (current_subject_id > 0) {
-                current_subject_id = current_subject_id - 1
-                document.getElementById('label').innerHTML = 'ID = ' + String(current_subject_id)
-                recorded_data[String(current_subject_id)] = document.getElementById('my_waist_reading').textContent;
-                document.getElementById('rec').innerHTML = 'Recorded: ' + JSON.stringify(recorded_data)
-                plot_3d(parameter_list)
+            var parsedCSV_page = filter_row(parsedCSV, page)
+            var container_table = d3.select("#currentMonthTable")
+                .append("table");
+            var container_table_thread = container_table.append("thead").append("tr")
+                .selectAll("th")
+                .data(parsedCSV[0])
+                .enter().append("th")
+                .text(function (d) {
+                    return d;
+                });
+            var container_table_tbody = container_table.append("tbody").selectAll("tr")
+                .data(parsedCSV_page).enter()
+                .append("tr")
+                .selectAll("td")
+                .data(function (d) {
+                    // console.log('d')
+                    // console.log(d)
+                    return d;
+                }).enter()
+                .append("td")
+
+            // add page and subject label
+            container_table_tbody.filter(function (d) {
+                // console.log(d)
+                return d.split(', ')[0] == 'p';
+            }).append("p")
+                .text(function (d) { return d.split(', ')[1]; })
+
+            container_table_tbody.filter(function (d) {
+                // console.log(d)
+                return d.split(', ')[0] == 'webgl-container';
+            }).attr('id', function (d) {
+                console.log(d)
+                str_0 = d.split(', ')[0]
+                str_1 = d.split(', ')[1].split('_')[1]
+                return str_0 + '_' + str_1;
+            })
+            // .text("div")
+            container_table_div = container_table_tbody.filter(function (d) {
+
+                return d.split(', ')[0] == 'div';
+            }).append("div").attr('class', "slidecontainer")
+            container_table_div.append('input').attr('type', "range").attr('orient', "vertical").attr('id', function (d) { return 'my_waist' + '_' + d.split(', ')[1]; })
+            container_table_div.append('p').text('Found waist location: ').append('span').attr('id', function (d) { return 'my_waist_reading' + '_' + d.split(', ')[1]; })
+            container_table_div.append('p').text("Subject's height in mm: ")
+
+            container_table_div.append('p').attr('id', function (d) { return 'height' + '_' + d.split(', ')[1]; })
+            // .text("span")
+
+            // console.log(container_table)
+        });
+        // height coloumn need: ID_HEIGHT
+        var data = d3.csv(parameter_list, function (data) {
+            // console.log(data)
+            // WebGLRenderingContext.clear()
+            var children = document.body.childNodes;
+            var canvases = document.getElementsByTagName("canvas");
+            console.log(canvases)
+            if (canvases != null && canvases.length != 0) {
+                // for (index = canvases.length - 1; index >= 0; index--) {
+                //     canvases[index].parentNode.removeChild(canvases[index]);
+                // }
+                // window.THREE.Cache.clear()
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i]['label'].includes(page)) {
+
+                        // console.log('list')
+                        var PATH_test = data[i]['obj_path']
+                        id_0 = data[i]['webgl-container_id'].split('_')[0]
+                        id_2 = data[i]['webgl-container_id'].split('_')[2]
+                        var ID_3D = id_0 + "_" + id_2;
+                        var ID_HEIGHT = data[i]['height_id']
+                        var ID_CONTROLER_READING = data[i]['my_waist_reading_id']
+                        var ID_CONTROLER = data[i]['my_waist_id']
+                        console.log(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER)
+                        render_obj(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER, update=true)
+                    }
+
+                }
+
             }
+
             else {
+                window.THREE.Cache.clear()
 
+                for (var i = 0; i < data.length; i++) {
+
+                    if (data[i]['label'].includes(page)) {
+                        // setTimeout(function () {
+                        //     console.log('after');
+                        // }, 5000);
+                        // console.log('list')
+                        var PATH_test = data[i]['obj_path']
+                        id_0 = data[i]['webgl-container_id'].split('_')[0]
+                        id_2 = data[i]['webgl-container_id'].split('_')[2]
+                        var ID_3D = id_0 + "_" + id_2;
+                        var ID_HEIGHT = data[i]['height_id']
+                        var ID_CONTROLER_READING = data[i]['my_waist_reading_id']
+                        var ID_CONTROLER = data[i]['my_waist_id']
+                        console.log(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER)
+                        render_obj(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER)
+                    }
+
+                }
             }
-        }
-        plot_tabel(ojb_list)
-        plot_3d(parameter_list)
+
+            // console.log(canvases);
+
+            // var canvases = document.getElementsByTagName("canvas");
+            // console.log(canvases)
+            // console.log(canvases != null )
+            // console.log(canvases.length != 0)
+
+            // if (canvases != null &&  canvases.length != 0)
+            //     console.log('removing canvas')
+            //     canvases.remove()
+
+        });
+            // var PATH_test = 'https://sxia2.github.io/waist_project/Program4/assets/SSFemale.obj'
+            // var ID_3D = "webgl-container"
+            // var ID_HEIGHT = "height"
+            // var ID_CONTROLER_READING = "my_waist_reading"
+            // var ID_CONTROLER = "my_waist"
+            // render_obj(PATH_test, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER)
+
     </script>
 
     <script>
-        if (!Detector.webgl) {
-            Detector.addGetWebGLMessage();
-        }
 
         function render_obj(PATH, ID_HEIGHT, ID_3D, ID_CONTROLER_READING, ID_CONTROLER, update = false) {
-            var ratio = 1000
-            var room, pmremGenerator;
-            var ambient, light1, light2, light3;
 
+
+            if (!Detector.webgl) {
+                Detector.addGetWebGLMessage();
+            }
+
+            var container;
+            var ratio = 1000
+            var camera, controls, scene, renderer, room, pmremGenerator;
+            var ambient, light1, light2, light3;
+            var plane
             var my_waist = document.getElementById(ID_CONTROLER);
             var my_waist_reading = document.getElementById(ID_CONTROLER_READING);
             var start_pos_ratio = 0.25
             var center_pos_ratio = 0.5
             var end_pos_ratio = 0.75
             var obj_display_ratio = 0.75
-            var plane
             if (!update) {
                 init(ID_3D);
                 draw(PATH, ID_HEIGHT, ID_3D);
@@ -283,13 +249,15 @@
                 animate();
             }
 
+
+
             function init(id_3d) {
 
-                renderer = new THREE.WebGLRenderer(autoClear = true);
+                renderer = new THREE.WebGLRenderer(autoClear=true);
                 renderer.domElement.id = id_3d;
                 renderer.setPixelRatio(window.devicePixelRatio);
                 renderer.setSize(window.innerWidth * obj_display_ratio, window.innerHeight * obj_display_ratio);
-                // console.log(id_3d)
+                console.log(id_3d)
                 container = document.getElementById(id_3d);
                 container.appendChild(renderer.domElement);
                 /* Scene */
@@ -314,6 +282,16 @@
                 light3.position.set(- 100, - 200, - 100);
                 scene.add(light3);
 
+                /* define a plane*/
+                geometry = new THREE.PlaneGeometry(1, 1);
+                material = new THREE.MeshPhongMaterial({
+                    color: 0xffff00, side: THREE.DoubleSide, opacity: 0.75,
+                    transparent: true
+                });
+                plane = new THREE.Mesh(geometry, material);
+                plane.lookAt(new THREE.Vector3(0, 1, 0));
+                // plane.translateZ(0)
+                scene.add(plane);
 
                 /* Camera */
 
@@ -335,27 +313,13 @@
 
             }
             function delete_obj() {
-                for (let i = scene.children.length - 1; i >= 0; i--) {
-                    if (scene.children[i].name == 'plane' || scene.children[i].name == 'avatar')
-                        scene.remove(scene.children[i]);
-                }
+                var selectedObject = scene.getObjectByName("avatar");
+                scene.remove(selectedObject);
             }
             function draw(path, id_height, id_3d) {
-                camera.position.set(0, 0.05, 3);
-                camera.lookAt(0, 0, 0);
-                camera.updateProjectionMatrix()
-                /* define a plane*/
-                geometry = new THREE.PlaneGeometry(1, 1);
-                material = new THREE.MeshPhongMaterial({
-                    color: 0xffff00, side: THREE.DoubleSide, opacity: 0.75,
-                    transparent: true
-                });
-                plane = new THREE.Mesh(geometry, material);
-                plane.lookAt(new THREE.Vector3(0, 1, 0));
-                plane.name = 'plane'
-                scene.add(plane);
 
                 // load obj
+
                 var ship_material = new THREE.MeshPhongMaterial({
 
                     color: 0x64747c,
@@ -375,7 +339,7 @@
                             // }
                         });
                         obj.scale.set(1 / ratio, 1 / ratio, 1 / ratio);
-                        obj.name = 'avatar'
+                        obj.name = "avatar";
                         scene.add(obj);
                         // console.log(obj)
                         obj_loaded = obj
@@ -387,6 +351,10 @@
                         // obj start with the center position
                         obj.translateY(-center_pos_ratio * box.size().y);
                         var box_new = new THREE.Box3().setFromObject(obj);
+                        // plane start at the lower bound
+                        // the lower bound is based on the total height and its ratio/percentage
+                        // console.log(box_new.min.y)
+                        // console.log(box_new.max.y)
                         var plane_lower_bound = box_new.min.y + (box_new.max.y - box_new.min.y) * start_pos_ratio
                         var plane_upper_bound = box_new.min.y + (box_new.max.y - box_new.min.y) * end_pos_ratio
                         // plane.translateZ(plane_lower_bound);
