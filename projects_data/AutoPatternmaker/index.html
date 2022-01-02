@@ -1,25 +1,111 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <title>CSC561 Project1</title>
-    <script type="text/javascript" src="main.js"></script>
+    <title>AutoPatternMaker</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            color: white;
+        }
+
+        .split {
+            height: 100%;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .split30 {
+            height: 100%;
+            width: 30%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .split70 {
+            height: 100%;
+            width: 70%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .left {
+            left: 0;
+            background-color: #111;
+        }
+
+        .right {
+            right: 0;
+            background-color: red;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .centered_left {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            /* transform: translate(-50%, -50%); */
+            text-align: left;
+        }
+
+        .centered img {
+            width: 150px;
+            border-radius: 50%;
+        }
+    </style>
 </head>
+
 <body>
-    <p>Eye location: X =
-        <input type="text" id="eyeLocationX" value="0.5">, Y =
-        <input type="text" id="eyeLocationY" value="0.5">, Z =
-        <input type="text" id="eyeLocationZ" value="-0.5"></p>
-    <p>View Up: X =
-        <input type="text" id="lookUpX" value="0">, Y =
-        <input type="text" id="lookUpY" value="1">, Z =
-        <input type="text" id="lookUpZ" value="0"></p>
-    <p>Look At: X =
-        <input type="text" id="lookAtX" value="0">, Y =
-        <input type="text" id="lookAtY" value="0">, Z =
-        <input type="text" id="lookAtZ" value="1"></p>
-    <button onclick="main();">Render</button>
-    <br>
-    <canvas id="viewport" width="512" height="512"></canvas>
+    <div class="split30 left">
+        <div class="centered_left">
+            <!-- <form action="/action_page.php">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" value="Doe"><br>
+                <input type="submit" value="Submit">
+            </form> -->
+            <input id="upload" type="file" onclick="upload()">
+            <!-- <button id="upload" type="button" onclick="upload()">
+                Load</button> -->
+            <form id="csvForm">
+                <input id="a"></input>
+                <input id="b"></input>
+                <input id="c"></input>
+                <input id="d"></input>
+            </form>
+            <button id="download">Download</button>
+        </div>
+    </div>
+
+    <div class="split70 right">
+        <div class="centered">
+            <h2>John Doe</h2>
+            <p>Some text here too.</p>
+        </div>
+    </div>
+    <!-- <script src="https://d3js.org/d3.v3.js"></script> -->
+    <script type="text/javascript" language="JavaScript" src="d3.v3.js"></script>
+    <script type="text/javascript" language="JavaScript" src="main.js"></script>
 </body>
+
 </html>
