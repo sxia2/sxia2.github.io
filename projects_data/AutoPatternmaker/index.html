@@ -21,10 +21,31 @@
             padding-top: 20px;
         }
 
+        .split_vertical {
+            height: 50%;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
         .split30 {
             height: 100%;
             width: 30%;
-            position: fixed;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+            background-color: #3C1053;
+
+        }
+
+        .split33 {
+            height: 100%;
+            width: 33.33%;
+            position: absolute;
             z-index: 1;
             top: 0;
             overflow-x: hidden;
@@ -34,21 +55,37 @@
         .split70 {
             height: 100%;
             width: 70%;
-            position: fixed;
+            position: absolute;
             z-index: 1;
             top: 0;
             overflow-x: hidden;
             padding-top: 20px;
+            
         }
 
         .left {
             left: 0;
-            background-color: #3C1053;
         }
 
         .right {
             right: 0;
             background-color: white;
+        }
+
+        .middle {
+            left: 33.33%;
+            /* background-color: rgb(92, 25, 25); */
+        }
+
+        .top {
+            top: 0;
+            /* background-color: rgb(52, 37, 122); */
+
+        }
+
+        .bottom {
+            bottom: 0;
+            /* background-color: rgb(109, 45, 45); */
         }
 
         .centered {
@@ -77,25 +114,13 @@
 <body>
     <div class="split30 left">
         <div class="centered_left">
-            <!-- <form action="/action_page.php">
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname" value="John"><br>
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname" value="Doe"><br>
-                <input type="submit" value="Submit">
-            </form> -->
-            <!-- <input id="upload" type="file" onclick="upload()"> -->
             <button id="Armstrong" type="button" onclick="filename_inital('Armstrong')">
                 Armstrong</button>
             <button id="Others" type="button" onclick="filename_inital('Others')">
                 Others</button>
             <form id="csvForm">
-                <p>Choose a method...</p>
+                <p>Choose a method from the tabs...</p>
                 <br>
-                <!-- <input id="a"></input>
-                <input id="b"></input>
-                <input id="c"></input>
-                <input id="d"></input> -->
             </form>
             <button id="generate" onclick="display()">Generate</button>
             <button id="download" hidden='hidden' onclick="download()">Download</button>
@@ -103,14 +128,44 @@
     </div>
 
     <div class="split70 right">
-        <div class="centered" id='canvas'>
+        <div class="split33 left">
+            <div class="split_vertical top">
+                <div class="centered" id="pattern">
+                </div>
 
+            </div>
+            <div class="split_vertical bottom">
+                <div class="centered" id="pattern">
+                </div>
+            </div>
         </div>
+        <div class="split33 middle">
+            <div class="centered" id="pattern">
+            </div>
+        </div>
+        <div class="split33 right">
+            <div class="split_vertical top">
+                <div class="centered" id="pattern">
+                </div>
+            </div>
+            <div class="split_vertical bottom">
+                <div class="centered" id="pattern">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="centered" id='canvas'>
+            
+        </div> -->
+
     </div>
     <!-- <script src="https://d3js.org/d3.v3.js"></script> -->
     <script type="text/javascript" language="JavaScript" src="d3.v3.js"></script>
     <script type="text/javascript" language="JavaScript" src="main.js"></script>
+    <script type="text/javascript" language="JavaScript" src="armstrong.js"></script>
+
     <script src="browser.maker.js" type="text/javascript"></script>
+    <script src="jszip.js"></script>
+    FileSaver.js
 </body>
 
 </html>

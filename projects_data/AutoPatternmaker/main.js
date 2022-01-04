@@ -1,10 +1,13 @@
+// import * as armstrong from './armstrong.js';
+
 // document.getElementById("Armstrong").addEventListener("click", upload, false);
 // document.getElementById("download").addEventListener("click", download, false);
 var out = "";
 var data = "";
 var filename = "";
 var method = "";
-var DXF = "";
+var DXF = [];
+var SVG = [];
 function filename_inital(pattern_mentod) {
     if (pattern_mentod == 'Armstrong') {
         filename = 'Armstrong.csv'
@@ -12,7 +15,6 @@ function filename_inital(pattern_mentod) {
     } else if (pattern_mentod == 'Others') {
         filename = 'test.csv'
         method = 'Others'
-
     } else {
         console.log('error in method...')
     }
@@ -32,30 +34,9 @@ function upload() {
         }
     });
 }
-function draw_armstrong() {
-    console.log('drawing...')
-    // https://maker.js.org/docs/basic-drawing/#It%27s%20Just%20JSON
-    var makerjs = require('makerjs');
-
-    var model = {
-        models: {
-            ring1: new makerjs.models.Ring(40, 100),
-            bc1: new makerjs.models.BoltCircle(90, 4, 10),
-            bc2: new makerjs.models.BoltCircle(55, 7, 6, 30)
-        }
-    };
-
-    var svg = makerjs.exporter.toSVG(model);
-    DXF = makerjs.exporter.toDXF(model);
-    // console.log(DXF)
-    return svg
-
-
-}
 
 function display() {
     data = [["id", "value"]];
-
     var f_value = d3.selectAll("#csvForm > input")[0];
     var f_id = d3.selectAll("#csvForm > label")[0];
     for (var i = 0; i < f_value.length; i++) {
@@ -64,9 +45,21 @@ function display() {
     // console.log(data);
     if (method == 'armstrong') {
         console.log('identified as armstrong')
-        document.getElementById('canvas').innerHTML = draw_armstrong();
-
-        
+        var values = draw_armstrong(data);
+        SVG = values.svgs
+        DXF = values.dxfs
+        // var target_svg = draw_armstrong();
+        var t = document.querySelectorAll('div[id^="pattern"]');
+        // console.log(t.length)
+        for (var i = 0; i < t.length; i++) {
+            // console.log(SVG[i])
+            t[i].innerHTML = SVG[i];
+        }
+        // document.getElementById('pattern').innerHTML = draw_armstrong();
+    } else if (pattern_mentod == 'Others') {
+        console.log('identified as others')
+    } else {
+        console.log('error in method...')
     }
 
     let element = document.getElementById("download");
@@ -83,28 +76,30 @@ function display() {
 function download() {
 
     data = DXF
+    // data = SVG
 
-    var csvContent = "data:text/csv;charset=utf-8,";
-    // data.forEach(function (d, i) {
-    //     dataString = d.join("");
-    //     csvContent += i < data.length ? dataString + "\n" : dataString;
-    // });
-    csvContent += String(data);
+    // https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs
+    // http://et.engr.iupui.edu/~dskim/tutorials/misc/
+    // var csvContent = "data:image/svg+xml,";
+    var csvContent = "data:	image/vnd.dxf,";
+    for (var i = 0; i < data.length; i++) {
+        data[i] = data[i].replace('HEADER\n9', 'HEADER\n9\n$ACADVER\n1\nAC1009\n9') + '\n';
+    }
+    // console.log(data.replace('HEADER\n9', 'HEADER\n9\n$ACADVER\n1\nAC1009\n9'));
 
-    var encodedUri = encodeURI(csvContent);
-    var link = document.createElement("a");
-    link.setAttribute("href", encodedUri);
-    link.setAttribute("download", "patterns.dxf");
-    link.click();
-//     console.log(data)
-//     var element = document.createElement('a');
-//     element.setAttribute('href', 'data:text/plain;charset=utf-8,', + encodeURIComponent(data));
-//     element.setAttribute('download', "patterns.dxf");
+    var zip = new JSZip();
+    var link_zip = document.createElement("a");
 
-//     element.style.display = 'none';
-//     document.body.appendChild(element);
+    for (var i = 0; i < 5; i++) {
+        var txt = data[i];
+        zip.file("file" + i + ".dxf", txt);
+    }
+    zip.generateAsync({
+        type: "base64"
+    }).then(function (content) {
+        link_zip.setAttribute("href", "data:application/zip;base64," + content);
+        link_zip.setAttribute("download", "patterns.zip");
+        link_zip.click()
+    });
 
-//     element.click();
-
-//     document.body.removeChild(element);
 }
