@@ -54,7 +54,14 @@ function display() {
         for (var i = 0; i < t.length; i++) {
             // console.log(SVG[i])
             t[i].innerHTML = SVG[i];
+
         }
+        var svg_all = document.querySelectorAll("svg");
+        for (var i = 0; i < svg_all.length; i++) {
+            svg_all[i].setAttribute("width", "50%");
+            svg_all[i].setAttribute("height", "50%");
+        }
+
         // document.getElementById('pattern').innerHTML = draw_armstrong();
     } else if (pattern_mentod == 'Others') {
         console.log('identified as others')
@@ -76,6 +83,7 @@ function display() {
 function download() {
 
     data = DXF
+    console.log(data)
     // data = SVG
 
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs
@@ -89,10 +97,11 @@ function download() {
 
     var zip = new JSZip();
     var link_zip = document.createElement("a");
+    var filenames = ['back_bodice', 'back_skirt', 'sleeve', 'front_bodice', 'front_skirt']
 
     for (var i = 0; i < 5; i++) {
         var txt = data[i];
-        zip.file("file" + i + ".dxf", txt);
+        zip.file(filenames[i] + ".dxf", txt);
     }
     zip.generateAsync({
         type: "base64"
