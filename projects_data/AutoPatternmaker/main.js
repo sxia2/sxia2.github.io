@@ -28,7 +28,12 @@ function upload() {
             // console.log(data[i].Age);
             out = document.getElementById('csvForm').innerHTML
             out += '<label for="fname">' + data[i].id + ': </label>';
-            out += '<input size="4" value="' + data[i].value + '">';
+            if (data[i].mandate == 0){
+                out += '<input size="4" type="hidden" value="' + data[i].value + '">';
+            }else{
+                out += '<input size="4" value="' + data[i].value + '">';
+            }
+            
             out += '<br>';
             document.getElementById('csvForm').innerHTML = out;
         }

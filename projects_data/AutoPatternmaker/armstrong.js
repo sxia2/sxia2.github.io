@@ -67,7 +67,7 @@ function draw_armstrong(data) {
         };
 
         var shoulder_point = makerjs.path.intersection(model_temp_shoulder.paths.line1, model_temp_shoulder.paths.arc1).intersectionPoints[0];
-        console.log(shoulder_point)
+        // console.log(shoulder_point)
 
         var model_temp_neck = {
             paths: {
@@ -77,7 +77,7 @@ function draw_armstrong(data) {
         };
 
         var neck_point = makerjs.path.intersection(model_temp_neck.paths.line1, model_temp_neck.paths.arc1).intersectionPoints[0];
-        console.log(neck_point)
+        // console.log(neck_point)
 
         var model_temp_n_point = {
             paths: {
@@ -87,7 +87,7 @@ function draw_armstrong(data) {
         };
 
         var n_point = makerjs.path.intersection(model_temp_n_point.paths.line1, model_temp_n_point.paths.arc1).intersectionPoints[0];
-        console.log(n_point)
+        // console.log(n_point)
         var p_point = [n_point[0] - 1.25, n_point[1]]
         var o_point = [n_point[0], n_point[1] + measurements.Side_Length]
         var model_temp_p_prime_point = {
@@ -98,7 +98,7 @@ function draw_armstrong(data) {
         };
 
         var p_prime_point = makerjs.path.intersection(model_temp_p_prime_point.paths.line1, model_temp_p_prime_point.paths.arc1).intersectionPoints[0];
-        console.log(p_prime_point)
+        // console.log(p_prime_point)
 
         var f_point = [-measurements.Dart_Placement_Front, -0.1875]
         var model_h_point = {
@@ -109,7 +109,7 @@ function draw_armstrong(data) {
         };
 
         var h_point = makerjs.path.intersection(model_h_point.paths.line1, model_h_point.paths.arc1).intersectionPoints[0];
-        console.log(h_point)
+        // console.log(h_point)
 
         var bust_point = [-measurements.Bust_Span - 0.25, h_point[1]]
 
@@ -122,7 +122,7 @@ function draw_armstrong(data) {
         };
 
         var r_point = makerjs.path.intersection(model_temp_r_point.paths.arc2, model_temp_r_point.paths.arc1).intersectionPoints[0];
-        console.log(r_point)
+        // console.log(r_point)
 
         var line1 = new makerjs.paths.Line(bust_point, f_point);
         var model_temp_f_prime_point = {
@@ -133,7 +133,7 @@ function draw_armstrong(data) {
         };
 
         var f_prime_point = makerjs.path.intersection(model_temp_f_prime_point.paths.arc1, model_temp_f_prime_point.paths.line1_1).intersectionPoints[0];
-        console.log(f_prime_point)
+        // console.log(f_prime_point)
 
         var waist_curve_1 = new makerjs.models.BezierCurve([[0, 0], [-0.5, 0], f_prime_point, f_point]);
 
@@ -146,7 +146,7 @@ function draw_armstrong(data) {
         };
 
         var p_p_prime_point = makerjs.path.intersection(model_temp_p_p_prime_point.paths.arc1, model_temp_p_p_prime_point.paths.line1_1).intersectionPoints[0];
-        console.log(p_p_prime_point)
+        // console.log(p_p_prime_point)
 
 
         var line1 = new makerjs.paths.Line(bust_point, r_point);
@@ -158,7 +158,7 @@ function draw_armstrong(data) {
         };
 
         var r_prime_point = makerjs.path.intersection(model_temp_r_prime_point.paths.arc1, model_temp_r_prime_point.paths.line1_1).intersectionPoints[0];
-        console.log(r_prime_point)
+        // console.log(r_prime_point)
 
         var waist_curve_2 = new makerjs.models.BezierCurve([p_prime_point, p_p_prime_point, r_prime_point, r_point]);
 
@@ -174,7 +174,7 @@ function draw_armstrong(data) {
         };
 
         var shoulder_prime_point = makerjs.path.intersection(model_temp_shoulder_prime_point.paths.arc1, model_temp_shoulder_prime_point.paths.line1_1).intersectionPoints[0];
-        console.log('shoulder_prime_point', shoulder_prime_point)
+        // console.log('shoulder_prime_point', shoulder_prime_point)
 
         var line1 = new makerjs.paths.Line(o_point, p_point);
         var model_temp_o_prime_point = {
@@ -185,11 +185,11 @@ function draw_armstrong(data) {
         };
 
         var o_prime_point = makerjs.path.intersection(model_temp_o_prime_point.paths.arc1, model_temp_o_prime_point.paths.line1_1).intersectionPoints[0];
-        console.log(o_prime_point)
+        // console.log(o_prime_point)
 
         m_prime_point = [m_point_x, o_point[1] + (shoulder_point[1] - o_point[1]) * 0.25]
 
-        console.log('m_prime', m_prime_point)
+        // console.log('m_prime', m_prime_point)
 
         var armhole = new makerjs.models.BezierCurve([o_point, o_prime_point, m_prime_point, shoulder_point]);
         armhole_front = makerjs.measure.modelPathLength(armhole);
@@ -203,11 +203,11 @@ function draw_armstrong(data) {
         };
 
         var neck_prime_point = makerjs.path.intersection(model_temp_neck_prime_point.paths.line2, model_temp_neck_prime_point.paths.line1_1).intersectionPoints[0];
-        console.log(neck_prime_point)
+        // console.log(neck_prime_point)
 
 
         var neck_mid_point = [(neck_point[0] + neck_prime_point[0]) / 2, (neck_point[1] + neck_prime_point[1]) / 2];
-        console.log('mid neck', neck_mid_point)
+        // console.log('mid neck', neck_mid_point)
 
         var line1 = new makerjs.paths.Line(neck_mid_point, neck_point);
         var model_temp_neck_star_point = {
@@ -218,7 +218,7 @@ function draw_armstrong(data) {
         };
 
         var neck_star_point = makerjs.path.intersection(model_temp_neck_star_point.paths.arc1, model_temp_neck_star_point.paths.line1_1).intersectionPoints[0];
-        console.log('neck star', neck_star_point)
+        // console.log('neck star', neck_star_point)
 
         var neckline = new makerjs.models.BezierCurve([[0, measurements.Center_Length_Front], [(neck_point[0]) / 2 - 0.25, measurements.Center_Length_Front], neck_star_point, neck_point]);
 
@@ -261,7 +261,7 @@ function draw_armstrong(data) {
         };
 
         var shoulder_temp_point = makerjs.path.intersection(model_temp_shoulder_point.paths.arc1, model_temp_shoulder_point.paths.line1).intersectionPoints[0];
-        console.log(shoulder_temp_point)
+        // console.log(shoulder_temp_point)
 
         var line1 = new makerjs.paths.Line(shoulder_temp_point, f_point);
         var model_temp_shoulder_star_point = {
@@ -272,7 +272,7 @@ function draw_armstrong(data) {
         };
 
         var shoulder_star_point = makerjs.path.intersection(model_temp_shoulder_star_point.paths.arc1, model_temp_shoulder_star_point.paths.line1_1).intersectionPoints[0];
-        console.log(shoulder_star_point)
+        // console.log(shoulder_star_point)
 
         var model_temp_h_point = {
             paths: {
@@ -282,7 +282,7 @@ function draw_armstrong(data) {
         };
 
         var h_point = makerjs.path.intersection(model_temp_h_point.paths.arc1, model_temp_h_point.paths.line1).intersectionPoints[0];
-        console.log(h_point)
+        // console.log(h_point)
         var i_point = [measurements.Dart_Placement_Back, -0.125]
         var k_point = [measurements.Dart_Placement_Back + 1.5, -0.125]
         var m_point = [measurements.Waist_Arc_Back + 1.75, -0.1875]
@@ -295,7 +295,7 @@ function draw_armstrong(data) {
         };
 
         var n_point = makerjs.path.intersection(model_temp_n_point.paths.arc1, model_temp_n_point.paths.line1).intersectionPoints[0];
-        console.log('n_point', n_point)
+        // console.log('n_point', n_point)
         var mn_distance = makerjs.measure.pathLength(new makerjs.paths.Line(m_point, n_point))
         var o_point = [(i_point[0] + k_point[0]) / 2, mn_distance - 1]
 
@@ -308,7 +308,7 @@ function draw_armstrong(data) {
         };
 
         var i_prime_point = makerjs.path.intersection(model_temp_i_prime_point.paths.arc1, model_temp_i_prime_point.paths.line1_1).intersectionPoints[0];
-        console.log(i_prime_point)
+        // console.log(i_prime_point)
 
         var waist_curve_1 = new makerjs.models.BezierCurve([[0, 0], [0.5, 0], i_prime_point, i_point]);
         var line1 = new makerjs.paths.Line(o_point, k_point);
@@ -320,7 +320,7 @@ function draw_armstrong(data) {
         };
 
         var k_prime_point = makerjs.path.intersection(model_temp_k_prime_point.paths.arc1, model_temp_k_prime_point.paths.line1_1).intersectionPoints[0];
-        console.log(k_prime_point)
+        // console.log(k_prime_point)
         var line1 = new makerjs.paths.Line(n_point, m_point);
         var model_temp_m_prime_point = {
             paths: {
@@ -330,7 +330,7 @@ function draw_armstrong(data) {
         };
 
         var m_prime_point = makerjs.path.intersection(model_temp_m_prime_point.paths.arc1, model_temp_m_prime_point.paths.line1_1).intersectionPoints[0];
-        console.log(m_prime_point)
+        // console.log(m_prime_point)
         var waist_curve_2 = new makerjs.models.BezierCurve([k_point, k_prime_point, m_prime_point, m_point]);
 
 
@@ -343,7 +343,7 @@ function draw_armstrong(data) {
         };
 
         var neck_prime_point = makerjs.path.intersection(model_temp_neck_prime_point.paths.line2, model_temp_neck_prime_point.paths.line1_1).intersectionPoints[0];
-        console.log(neck_prime_point)
+        // console.log(neck_prime_point)
         // assume angle is 45 degrees
         // var neck_star_point = [neck_prime_point[0] - 0.375, neck_prime_point[1] + 0.375]
         // using the intersecting point as reference point directly
@@ -358,10 +358,10 @@ function draw_armstrong(data) {
         };
 
         var n_prime_point = makerjs.path.intersection(model_temp_n_prime_point.paths.arc1, model_temp_n_prime_point.paths.line1_1).intersectionPoints[0];
-        console.log(n_prime_point)
+        // console.log(n_prime_point)
 
         var t_point_x = measurements.Across_Back + 0.25
-        console.log('t_point_x', t_point_x)
+        // console.log('t_point_x', t_point_x)
         var armhole = new makerjs.models.BezierCurve([n_point, n_prime_point, [t_point_x, n_prime_point[0] + 0.5 * (h_point[0] - n_prime_point[0])], h_point]);
         armhole_back = makerjs.measure.modelPathLength(armhole);
 
@@ -400,7 +400,7 @@ function draw_armstrong(data) {
         };
 
         var r_prime_point = makerjs.path.intersection(model_temp_r_prime_point.paths.arc1, model_temp_r_prime_point.paths.line1_1).intersectionPoints[0];
-        console.log(r_prime_point)
+        // console.log(r_prime_point)
 
         var line1 = new makerjs.paths.Line([q_point, r_opposit_point]);
         var model_temp_r_opposit_prime_point = {
@@ -411,7 +411,7 @@ function draw_armstrong(data) {
         };
 
         var r_opposit_prime_point = makerjs.path.intersection(model_temp_r_opposit_prime_point.paths.arc1, model_temp_r_opposit_prime_point.paths.line1_1).intersectionPoints[0];
-        console.log(r_opposit_prime_point)
+        // console.log(r_opposit_prime_point)
 
         // TBC
 
@@ -538,9 +538,9 @@ function draw_armstrong(data) {
         var a_point = [0, measurements.Sleeve_Length];
         var c_point = [0, measurements.Sleeve_Length - measurements.Cap_Height];
         var d_prime_point = [0, c_point[1] / 2 + 1];
-        console.log(armhole_front, armhole_back)
+        // console.log(armhole_front, armhole_back)
         var armhole_average = (armhole_back + armhole_front) / 2;
-        console.log('armhole averaged: ', armhole_average);
+        // console.log('armhole averaged: ', armhole_average);
         var e_1 = [-measurements.Biceps / 2, c_point[1]]
 
         var model_temp_e_2_point = {
@@ -551,7 +551,7 @@ function draw_armstrong(data) {
         };
         var e_2 = makerjs.path.intersection(model_temp_e_2_point.paths.arc1, model_temp_e_2_point.paths.line1_1).intersectionPoints[0];
         var e_point = [(e_1[0] + e_2[0]) / 2, (e_1[1] + e_2[1]) / 2]
-        console.log(e_point);
+        // console.log(e_point);
         var f_point = [-e_point[0], e_point[1]];
         // var ob_distance = makerjs.measure.pathLength(new makerjs.paths.Line(c_point,e_point))-2
         var o_point = [e_point[0] + 2, 0];
@@ -577,10 +577,10 @@ function draw_armstrong(data) {
             return return_point;
         }
         var g_point_extend = extend(g_point, a_point, -90, -90, 0, 0.375);
-        console.log(g_point_extend)
+        // console.log(g_point_extend)
         var h_point_extend = extend(h_point, a_point, 90, 90, 180, 0.25);
         var k_point_extend = extend(k_point, a_point, 90, 90, 180, 0.625);
-        console.log(k_point_extend)
+        // console.log(k_point_extend)
         var n_point_extend = extend(n_point, a_point, 90, 180, 270, 0.5);
         var m_point_extend = extend(m_point, a_point, -90, 0, 90, 0.1875);
         var l_point_extend = extend(l_point, a_point, -90, 0, 90, 0.75);
@@ -589,7 +589,7 @@ function draw_armstrong(data) {
         var a_point_extend_left = [a_point[0] - 1.5, a_point[1]]
         var a_point_extend_right = [a_point[0] + 1.5, a_point[1]]
 
-        console.log(l_point_extend)
+        // console.log(l_point_extend)
         var armhole_1 = new makerjs.models.BezierCurve([e_point, e_point_extend, g_point_extend, h_point_extend]);
         var armhole_2 = new makerjs.models.BezierCurve([h_point_extend, k_point_extend, a_point_extend_left, a_point]);
         var armhole_3 = new makerjs.models.BezierCurve([a_point, a_point_extend_right, l_point_extend, m_point_extend]);
