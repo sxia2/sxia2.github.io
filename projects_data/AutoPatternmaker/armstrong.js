@@ -499,7 +499,7 @@ function draw_armstrong(data) {
         var side_wasit_point = makerjs.path.intersection(model_temp_side_waist.paths.line1, model_temp_side_waist.paths.arc1).intersectionPoints[0];
         var side_curve = new makerjs.models.BezierCurve([[measurements.Hip_Arc_Back + 0.5, -measurements.Hip_Depth_Front], [measurements.Hip_Arc_Back + 0.5, -measurements.Hip_Depth_Front + 2], side_wasit_point]);
 
-        var waist_curve_1 = new makerjs.models.BezierCurve([[0, -measurements.Hip_Depth_Front + measurements.Hip_Depth_Back], [-1, -measurements.Hip_Depth_Front + measurements.Hip_Depth_Back], [measurements.Dart_Placement_Back, side_wasit_point[1] / 3]]);
+        var waist_curve_1 = new makerjs.models.BezierCurve([[0, -measurements.Hip_Depth_Front + measurements.Hip_Depth_Back], [1, -measurements.Hip_Depth_Front + measurements.Hip_Depth_Back], [measurements.Dart_Placement_Back, side_wasit_point[1] / 3]]);
         var waist_curve_2 = new makerjs.models.BezierCurve([[measurements.Dart_Placement_Front + darts[2], side_wasit_point[1] / 3], [measurements.Dart_Placement_Front + darts[2] + 0.5, side_wasit_point[1] / 3], [measurements.Dart_Placement_Front + darts[2] + 1, 2 * side_wasit_point[1] / 3], [measurements.Dart_Placement_Front + darts[2] + 1.5, 2 * side_wasit_point[1] / 3]]);
         var waist_curve_3 = new makerjs.models.BezierCurve([[measurements.Dart_Placement_Front + darts[2] + 1.5 + darts[3], 2 * side_wasit_point[1] / 3], [measurements.Dart_Placement_Front + darts[2] + 1.5 + darts[3] + 0.5, 2 * side_wasit_point[1] / 3], side_wasit_point]);
         // console.log('compute model length ...')
